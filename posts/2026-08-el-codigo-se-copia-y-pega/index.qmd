@@ -8,25 +8,21 @@ date: 2026-08-07
 categories: [IA dirigida, anuncios]
 ---
 
-<!-- ⚠️ ANTES DE PUBLICAR (Gonzalo): verificar que la anécdota de Cusco esté
-     contada como pasó de verdad (nota de producción del borrador original,
-     16-jul). Es el mismo texto del email 1 de lanzamiento — corregir en
-     ambos lados si cambia algo. -->
-
-Hace unas semanas, en Cusco, un profesor me contó orgulloso su plan: estaba
-ahorrando para comprarse una computadora grande, de esas con nombre de nave
-espacial, para correr sus modelos.
+Hace unas semanas, en Cusco, un profesor me contaba su plan: estaba ahorrando
+para comprarse una computadora grande, de esas con nombre de nave espacial,
+para correr sus modelos.
 
 Le dije que no la compre. Que esos modelos corren por centavos en una máquina
-alquilada en la nube, desde el navegador, sin instalar nada.
+alquilada en la nube, desde el navegador, sin instalar nada y sin hacerte de
+una máquina que será obsoleta en dos años.
 
-Parpadeó. Y me preguntó: *"¿Y eso... lo enseñas?"*
+Se quedó pensando un momento y me preguntó: *"¿Y eso... lo enseñas?"*
 
-Ese parpadeo me persigue desde entonces, porque resume algo más grande: **las
+La pregunta me persigue desde entonces, porque resume algo más grande: **las
 herramientas de investigación cambiaron más rápido que la formación de los
-investigadores.** Y la brecha ya no está donde solía estar.
+investigadores.** Y la brecha ya no está solamente donde solía estar.
 
-## La brecha se movió
+## La brecha ha cambiado
 
 Durante años, La Farola enseñó una cosa con orgullo: a escribir el código que
 doma los microdatos públicos del Perú. Unir 10 años de la ENAHO, armonizar
@@ -37,17 +33,24 @@ Seamos directos sobre lo que pasó: **hoy una IA escribe ese código en
 segundos.** El `map()` que tomaba un taller entero de explicar, sale gratis
 de un chat.
 
-¿Eso mata el oficio? Al contrario. Lo sube de piso.
+¿Eso mata el oficio? Al contrario. Lo sube de piso, te ahorras lo tedioso.
 
-Porque la IA escribe el `map()` perfecto... sobre un ubigeo que perdió el
-cero a la izquierda. Junta 10 años de encuestas... sin notar que la variable
-cambió de definición en 2019. Estima tu modelo... con el deflactor
-equivocado, con una atrición que sesga todo, con un peso muestral que no
-corresponde. Y te lo entrega con total confianza, en una tabla hermosa.
+La IA te va a escribir un `map()` perfecto... sobre un ubigeo que perdió el
+cero a la izquierda. O va a juntar 10 años de encuestas... sin notar que la
+variable cambió de definición en 2019. Peor aún, va a estimar tu modelo...
+con el deflactor equivocado, con una atrición que sesga todo, con un peso
+muestral que no corresponde. Y te lo va a entregar con total confianza, en
+una tabla hermosa y celebrando qué gran investigador resultaste.
 
-El código se volvió barato. **Lo que se volvió caro es el criterio**: saber
-qué calcular, darse cuenta de que salió mal, y defender por qué está bien.
-La estadística siempre fue eso; ahora ya no hay dónde esconderse.
+Ahora que el código se ha hecho tan fácil de conseguir es más obvio que nunca
+que no era la capacidad más importante en el desarrollo académico de nadie.
+Era simplemente una barrera difícil de superar en el camino. **Lo
+verdaderamente valioso es (y siempre fue) el criterio de la investigadora**:
+saber qué calcular y por qué; entender cuándo un cálculo está bien hecho y
+poder demostrarlo; explicar la relevancia de un cálculo en el desarrollo de
+un argumento y saber criticar sus debilidades. La estadística siempre fue
+eso; ahora ya no hay dónde esconderse - lo único que importa es la calidad
+del análisis y la pertinencia de los cálculos para ese análisis.
 
 ## Qué hacemos al respecto
 
@@ -58,11 +61,13 @@ La Farola vuelve, rediseñada para este mundo:
   vivo se reserva para lo que no puedes leer en un libro: diagnóstico,
   comparación, interpretación. Tú diriges; la máquina tipea.
 - **Herramientas libres.** Estamos empaquetando nuestros años de plomería
-  ENAHO en un paquete de R de código abierto. Pronto en este blog.
+  ENAHO, ENDES e INEI en general en un paquete de R de código abierto.
+  Pronto en este boletín.
 - **Lecciones gratis en video.** La primera milla del trabajo mecánico,
-  regalada. Lo cobrable es el criterio.
-- **Un boletín semanal.** Plomería de datos, IA bajo tu dirección, y de vez
-  en cuando una herejía sobre cómo enseñamos economía.
+  regalada. En La Farola cobramos por enseñarte criterio, no simplemente
+  comandos.
+- **Este boletín, cada semana.** Plomería de datos, IA bajo tu dirección, y
+  de vez en cuando una herejía sobre cómo enseñamos economía.
 
 ## Lo primero: datos de panel, con dos países a la vez
 
@@ -77,17 +82,17 @@ pregunta que Perú y México comparten: *¿ser informal hoy te condena a ser
 informal mañana?*
 
 Seis sesiones en vivo, teoría y preparación en video, asesoría personal para
-tu propio proyecto. R no es requisito — el criterio econométrico básico, sí.
+tu propio proyecto. R no es requisito - el criterio econométrico básico, sí.
 
 [Ver el programa completo →](https://lafarola.thinkific.com/courses/panel){.btn-farola}
 
 Early bird hasta el sábado 15 de agosto. Y si tienes dudas, escríbeme al
 [WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel)
-— las respondo yo, no un bot.
+- las respondo yo, no un bot.
 
 ---
 
-Ah, y al profesor de Cusco: sí. Ya lo enseñamos.
+Ah, y al profesor de Cusco: sí, este año lo enseñamos.
 
 *La mayoría usa la estadística como un borracho usa una farola: más para
 apoyarse que para iluminarse. Nosotros preferimos iluminar.*
