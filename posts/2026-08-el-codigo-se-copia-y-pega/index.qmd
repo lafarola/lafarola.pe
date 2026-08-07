@@ -1,0 +1,93 @@
+---
+title: "El código se copia y pega. El criterio, no."
+description: >
+  La Farola vuelve: talleres rediseñados para la era de la IA, y un taller de
+  datos de panel con Perú y México lado a lado.
+author: "Gonzalo Urbina"
+date: 2026-08-07
+categories: [IA dirigida, anuncios]
+---
+
+<!-- ⚠️ ANTES DE PUBLICAR (Gonzalo): verificar que la anécdota de Cusco esté
+     contada como pasó de verdad (nota de producción del borrador original,
+     16-jul). Es el mismo texto del email 1 de lanzamiento — corregir en
+     ambos lados si cambia algo. -->
+
+Hace unas semanas, en Cusco, un profesor me contó orgulloso su plan: estaba
+ahorrando para comprarse una computadora grande, de esas con nombre de nave
+espacial, para correr sus modelos.
+
+Le dije que no la compre. Que esos modelos corren por centavos en una máquina
+alquilada en la nube, desde el navegador, sin instalar nada.
+
+Parpadeó. Y me preguntó: *"¿Y eso... lo enseñas?"*
+
+Ese parpadeo me persigue desde entonces, porque resume algo más grande: **las
+herramientas de investigación cambiaron más rápido que la formación de los
+investigadores.** Y la brecha ya no está donde solía estar.
+
+## La brecha se movió
+
+Durante años, La Farola enseñó una cosa con orgullo: a escribir el código que
+doma los microdatos públicos del Perú. Unir 10 años de la ENAHO, armonizar
+etiquetas que cambian sin aviso, reconstruir deflactores espaciales desde la
+metodología oficial. Plomería fina, de la que una tesis depende.
+
+Seamos directos sobre lo que pasó: **hoy una IA escribe ese código en
+segundos.** El `map()` que tomaba un taller entero de explicar, sale gratis
+de un chat.
+
+¿Eso mata el oficio? Al contrario. Lo sube de piso.
+
+Porque la IA escribe el `map()` perfecto... sobre un ubigeo que perdió el
+cero a la izquierda. Junta 10 años de encuestas... sin notar que la variable
+cambió de definición en 2019. Estima tu modelo... con el deflactor
+equivocado, con una atrición que sesga todo, con un peso muestral que no
+corresponde. Y te lo entrega con total confianza, en una tabla hermosa.
+
+El código se volvió barato. **Lo que se volvió caro es el criterio**: saber
+qué calcular, darse cuenta de que salió mal, y defender por qué está bien.
+La estadística siempre fue eso; ahora ya no hay dónde esconderse.
+
+## Qué hacemos al respecto
+
+La Farola vuelve, rediseñada para este mundo:
+
+- **Talleres donde el código no es requisito, el criterio sí.** La teoría y
+  la limpieza de datos llegan en video, para pausar y repetir. La sesión en
+  vivo se reserva para lo que no puedes leer en un libro: diagnóstico,
+  comparación, interpretación. Tú diriges; la máquina tipea.
+- **Herramientas libres.** Estamos empaquetando nuestros años de plomería
+  ENAHO en un paquete de R de código abierto. Pronto en este blog.
+- **Lecciones gratis en video.** La primera milla del trabajo mecánico,
+  regalada. Lo cobrable es el criterio.
+- **Un boletín semanal.** Plomería de datos, IA bajo tu dirección, y de vez
+  en cuando una herejía sobre cómo enseñamos economía.
+
+## Lo primero: datos de panel, con dos países a la vez
+
+El **miércoles 19 de agosto** arranca nuestro taller de **Modelos de Datos de
+Panel con R**, y tiene algo que ningún curso de la región ofrece: cada método
+se aplica lado a lado a la **ENAHO Panel (Perú)** y a la **ENOE (México)**.
+
+¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos
+encuestas distintas, por fin distingues qué es del método y qué es de tus
+datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la
+pregunta que Perú y México comparten: *¿ser informal hoy te condena a ser
+informal mañana?*
+
+Seis sesiones en vivo, teoría y preparación en video, asesoría personal para
+tu propio proyecto. R no es requisito — el criterio econométrico básico, sí.
+
+[Ver el programa completo →](https://lafarola.thinkific.com/courses/panel){.btn-farola}
+
+Early bird hasta el sábado 15 de agosto. Y si tienes dudas, escríbeme al
+[WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel)
+— las respondo yo, no un bot.
+
+---
+
+Ah, y al profesor de Cusco: sí. Ya lo enseñamos.
+
+*La mayoría usa la estadística como un borracho usa una farola: más para
+apoyarse que para iluminarse. Nosotros preferimos iluminar.*

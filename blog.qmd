@@ -1,0 +1,13 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, reading-time]
+  feed:
+    title: "La Farola — Blog"
+    description: "Plomería de datos peruanos, IA bajo tu dirección, y de vez en cuando una herejía sobre cómo enseñamos economía."
+page-layout: full
+toc: false
+---

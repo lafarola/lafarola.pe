@@ -1,0 +1,48 @@
+---
+pagetitle: "La Farola — De la data cruda al paper publicado"
+toc: false
+listing:
+  id: ultimas-del-blog
+  contents: posts
+  sort: "date desc"
+  type: default
+  max-items: 3
+  fields: [date, title, description]
+---
+
+::: {.hero-farola}
+# De la data cruda al paper publicado
+
+La mayoría usa la estadística como un borracho usa una farola: *más para
+apoyarse que para iluminarse*. La Farola existe para lo segundo — y para
+sostenerte mientras llegas.
+:::
+
+Enseñamos a investigadores, tesistas y analistas de política pública a
+convertir los microdatos públicos del Perú — ENAHO, ENDES, los archivos crudos
+del INEI con toda su mugre — en investigación publicable: flujos reproducibles
+en R, métodos aplicados con rigor y, cada vez más, IA bajo tu dirección (no al
+revés).
+
+Talleres en vivo, cursos, herramientas de código abierto y un boletín semanal.
+Sin humo: código real, datos reales, resultados que van directo a tu tesis o
+paper.
+
+::: {.card-curso}
+#### Taller en curso — Modelos de Datos de Panel con R
+
+**ENAHO Panel (Perú) y ENOE (México), lado a lado.** Efectos fijos,
+diferencias en diferencias, Arellano-Bond — el mismo modelo enfrentado a dos
+encuestas, para distinguir qué es del método y qué es de tus datos. Seis
+sesiones en vivo, del 19 de agosto al 5 de septiembre de 2026. Early bird
+hasta el 15 de agosto.
+
+[Ver el programa completo →](https://lafarola.thinkific.com/courses/panel){.btn-farola}
+:::
+
+## Del blog
+
+::: {#ultimas-del-blog}
+:::
+
+[Todos los posts →](blog.qmd)

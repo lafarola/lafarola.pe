@@ -1,0 +1,43 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+  resources:
+    - CNAME
+
+lang: es
+
+website:
+  title: "La Farola"
+  site-url: "https://lafarola.pe"
+  description: "Datos públicos peruanos, R e IA para investigadores. De la data cruda al paper publicado."
+  navbar:
+    logo: assets/farola_blanco_transparente.png
+    logo-alt: "La Farola"
+    title: "La Farola"
+    left:
+      - text: "Blog"
+        href: blog.qmd
+      - text: "Cursos"
+        href: "https://lafarola.thinkific.com"
+    right:
+      - icon: rss
+        href: blog.xml
+        aria-label: RSS
+  page-footer:
+    background: "#000a19"
+    foreground: "#f5f5f5"
+    center: |
+      **La Farola** · De la data cruda al paper publicado ·
+      [gonzalo@lafarola.pe](mailto:gonzalo@lafarola.pe) ·
+      [WhatsApp](https://wa.me/51971333867)
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles/lafarola.scss
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true

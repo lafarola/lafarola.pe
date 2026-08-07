@@ -1,0 +1,104 @@
+/*-- scss:defaults --*/
+
+// Paleta La Farola (brand book Pomelli, jul 2026)
+$navy: #000a19; // "noche" — texto/fondos oscuros
+$paper: #f5f5f5; // fondos claros
+$slate: #2f3841; // superficies secundarias
+$brand-blue: #4a6b8a; // superficies de marca
+$orange: #e07b39; // "la luz de la farola" — único color de acción
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "Roboto", "Segoe UI", Arial, sans-serif;
+$headings-font-family: "Roboto Slab", Georgia, serif;
+$font-family-monospace: "JetBrains Mono", Consolas, monospace;
+
+$body-bg: $paper;
+$body-color: $slate;
+$headings-color: $navy;
+$link-color: $orange;
+
+$navbar-bg: $navy;
+$navbar-fg: $paper;
+
+$code-color: #a94e14;
+$code-bg: #ece9e4;
+
+/*-- scss:rules --*/
+
+.navbar {
+  .navbar-brand {
+    font-family: $headings-font-family;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  img {
+    max-height: 36px;
+  }
+}
+
+// Hero del home: superficie standalone -> navy + farola blanca (regla de banners)
+.hero-farola {
+  background: $navy;
+  color: $paper;
+  padding: 3rem 2.5rem;
+  border-radius: 10px;
+  margin: 1.5rem 0 2rem 0;
+
+  h1 {
+    color: #ffffff;
+    font-size: 2.1rem;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.1rem;
+    max-width: 42rem;
+  }
+
+  em {
+    color: lighten($orange, 12%);
+    font-style: normal;
+  }
+}
+
+// Card del curso activo: acento naranja a la izquierda
+.card-curso {
+  background: #ffffff;
+  border-left: 4px solid $orange;
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  box-shadow: 0 1px 4px rgba(0, 10, 25, 0.08);
+
+  h4 {
+    margin-top: 0;
+  }
+}
+
+// Botón de acción (naranja = el único color de clic)
+.btn-farola {
+  display: inline-block;
+  background: $orange;
+  color: #ffffff !important;
+  padding: 0.7rem 1.6rem;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    background: darken($orange, 8%);
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+// Posts: ancho de lectura cómodo
+.quarto-title-block .quarto-title .title {
+  font-size: 2rem;
+}
+
+blockquote {
+  border-left: 3px solid $brand-blue;
+  color: lighten($slate, 12%);
+}
