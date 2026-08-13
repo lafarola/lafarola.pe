@@ -38,6 +38,7 @@ format:
     theme:
       - cosmo
       - styles/lafarola.scss
+    include-in-header: includes/meta-pixel.html
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
