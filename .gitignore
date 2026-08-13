@@ -3,3 +3,6 @@
 
 **/*.quarto_ipynb
 .Rproj.user
+
+# Docs internos de operación: NUNCA al repo público
+/PUBLICAR.md
