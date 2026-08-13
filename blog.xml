@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>La Farola - Blog</title>
+<link>https://lafarola.pe/blog.html</link>
+<atom:link href="https://lafarola.pe/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Plomería de datos peruanos, IA bajo tu dirección, y de vez en cuando una herejía sobre cómo enseñamos economía.</description>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Fri, 07 Aug 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>El código se copia y pega. El criterio, no.</title>
+  <dc:creator>Gonzalo Urbina</dc:creator>
+  <link>https://lafarola.pe/posts/2026-08-el-codigo-se-copia-y-pega/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Hace unas semanas, en Cusco, un profesor me contaba su plan: estaba ahorrando para comprarse una computadora grande, de esas con nombre de nave espacial, para correr sus modelos.</p>
+<p>Le dije que no la compre. Que esos modelos corren por centavos en una máquina alquilada en la nube, desde el navegador, sin instalar nada y sin hacerte de una máquina que será obsoleta en dos años.</p>
+<p>Se quedó pensando un momento y me preguntó: <em>“¿Y eso… lo enseñas?”</em></p>
+<p>La pregunta me persigue desde entonces, porque resume algo más grande: <strong>las herramientas de investigación cambiaron más rápido que la formación de los investigadores.</strong> Y la brecha ya no está solamente donde solía estar.</p>
+<section id="la-brecha-ha-cambiado" class="level2">
+<h2 class="anchored" data-anchor-id="la-brecha-ha-cambiado">La brecha ha cambiado</h2>
+<p>Durante años, La Farola enseñó una cosa con orgullo: a escribir el código que doma los microdatos públicos del Perú. Unir 10 años de la ENAHO, armonizar etiquetas que cambian sin aviso, reconstruir deflactores espaciales desde la metodología oficial. Plomería fina, de la que una tesis depende.</p>
+<p>Seamos directos sobre lo que pasó: <strong>hoy una IA escribe ese código en segundos.</strong> El <code>map()</code> que tomaba un taller entero de explicar, sale gratis de un chat.</p>
+<p>¿Eso mata el oficio? Al contrario. Lo sube de piso, te ahorras lo tedioso.</p>
+<p>La IA te va a escribir un <code>map()</code> perfecto… sobre un ubigeo que perdió el cero a la izquierda. O va a juntar 10 años de encuestas… sin notar que la variable cambió de definición en 2019. Peor aún, va a estimar tu modelo… con el deflactor equivocado, con una atrición que sesga todo, con un peso muestral que no corresponde. Y te lo va a entregar con total confianza, en una tabla hermosa y celebrando qué gran investigador resultaste.</p>
+<p>Ahora que el código se ha hecho tan fácil de conseguir es más obvio que nunca que no era la capacidad más importante en el desarrollo académico de nadie. Era simplemente una barrera difícil de superar en el camino. <strong>Lo verdaderamente valioso es (y siempre fue) el criterio de la investigadora</strong>: saber qué calcular y por qué; entender cuándo un cálculo está bien hecho y poder demostrarlo; explicar la relevancia de un cálculo en el desarrollo de un argumento y saber criticar sus debilidades. La estadística siempre fue eso; ahora ya no hay dónde esconderse - lo único que importa es la calidad del análisis y la pertinencia de los cálculos para ese análisis.</p>
+</section>
+<section id="qué-hacemos-al-respecto" class="level2">
+<h2 class="anchored" data-anchor-id="qué-hacemos-al-respecto">Qué hacemos al respecto</h2>
+<p>La Farola vuelve, rediseñada para este mundo:</p>
+<ul>
+<li><strong>Talleres donde el código no es requisito, el criterio sí.</strong> La teoría y la limpieza de datos llegan en video, para pausar y repetir. La sesión en vivo se reserva para lo que no puedes leer en un libro: diagnóstico, comparación, interpretación. Tú diriges; la máquina tipea.</li>
+<li><strong>Herramientas libres.</strong> Estamos empaquetando nuestros años de plomería ENAHO, ENDES e INEI en general en un paquete de R de código abierto. Pronto en este boletín.</li>
+<li><strong>Lecciones gratis en video.</strong> La primera milla del trabajo mecánico, regalada. En La Farola cobramos por enseñarte criterio, no simplemente comandos.</li>
+<li><strong>Este boletín, cada semana.</strong> Plomería de datos, IA bajo tu dirección, y de vez en cuando una herejía sobre cómo enseñamos economía.</li>
+</ul>
+</section>
+<section id="lo-primero-datos-de-panel-con-dos-países-a-la-vez" class="level2">
+<h2 class="anchored" data-anchor-id="lo-primero-datos-de-panel-con-dos-países-a-la-vez">Lo primero: datos de panel, con dos países a la vez</h2>
+<p>El <strong>miércoles 19 de agosto</strong> arranca nuestro taller de <strong>Modelos de Datos de Panel con R</strong>, y tiene algo que ningún curso de la región ofrece: cada método se aplica lado a lado a la <strong>ENAHO Panel (Perú)</strong> y a la <strong>ENOE (México)</strong>.</p>
+<p>¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: <em>¿ser informal hoy te condena a ser informal mañana?</em></p>
+<p>Seis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito - el criterio econométrico básico, sí.</p>
+<p><a href="https://lafarola.thinkific.com/courses/panel" class="btn-farola">Ver el programa completo →</a></p>
+<p>Early bird hasta el sábado 15 de agosto. Y si tienes dudas, escríbeme al <a href="https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel">WhatsApp</a> - las respondo yo, no un bot.</p>
+<hr>
+<p>Ah, y al profesor de Cusco: sí, este año lo enseñamos.</p>
+<p><em>La mayoría usa la estadística como un borracho usa una farola: más para apoyarse que para iluminarse. Nosotros preferimos iluminar.</em></p>
+
+
+</section>
+
+ ]]></description>
+  <category>IA dirigida</category>
+  <category>anuncios</category>
+  <guid>https://lafarola.pe/posts/2026-08-el-codigo-se-copia-y-pega/</guid>
+  <pubDate>Fri, 07 Aug 2026 05:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

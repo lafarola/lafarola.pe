@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "posts/2026-08-el-codigo-se-copia-y-pega/index.html",
+    "href": "posts/2026-08-el-codigo-se-copia-y-pega/index.html",
+    "title": "El código se copia y pega. El criterio, no.",
+    "section": "",
+    "text": "Hace unas semanas, en Cusco, un profesor me contaba su plan: estaba ahorrando para comprarse una computadora grande, de esas con nombre de nave espacial, para correr sus modelos.\nLe dije que no la compre. Que esos modelos corren por centavos en una máquina alquilada en la nube, desde el navegador, sin instalar nada y sin hacerte de una máquina que será obsoleta en dos años.\nSe quedó pensando un momento y me preguntó: “¿Y eso… lo enseñas?”\nLa pregunta me persigue desde entonces, porque resume algo más grande: las herramientas de investigación cambiaron más rápido que la formación de los investigadores. Y la brecha ya no está solamente donde solía estar."
+  },
+  {
+    "objectID": "posts/2026-08-el-codigo-se-copia-y-pega/index.html#la-brecha-ha-cambiado",
+    "href": "posts/2026-08-el-codigo-se-copia-y-pega/index.html#la-brecha-ha-cambiado",
+    "title": "El código se copia y pega. El criterio, no.",
+    "section": "La brecha ha cambiado",
+    "text": "La brecha ha cambiado\nDurante años, La Farola enseñó una cosa con orgullo: a escribir el código que doma los microdatos públicos del Perú. Unir 10 años de la ENAHO, armonizar etiquetas que cambian sin aviso, reconstruir deflactores espaciales desde la metodología oficial. Plomería fina, de la que una tesis depende.\nSeamos directos sobre lo que pasó: hoy una IA escribe ese código en segundos. El map() que tomaba un taller entero de explicar, sale gratis de un chat.\n¿Eso mata el oficio? Al contrario. Lo sube de piso, te ahorras lo tedioso.\nLa IA te va a escribir un map() perfecto… sobre un ubigeo que perdió el cero a la izquierda. O va a juntar 10 años de encuestas… sin notar que la variable cambió de definición en 2019. Peor aún, va a estimar tu modelo… con el deflactor equivocado, con una atrición que sesga todo, con un peso muestral que no corresponde. Y te lo va a entregar con total confianza, en una tabla hermosa y celebrando qué gran investigador resultaste.\nAhora que el código se ha hecho tan fácil de conseguir es más obvio que nunca que no era la capacidad más importante en el desarrollo académico de nadie. Era simplemente una barrera difícil de superar en el camino. Lo verdaderamente valioso es (y siempre fue) el criterio de la investigadora: saber qué calcular y por qué; entender cuándo un cálculo está bien hecho y poder demostrarlo; explicar la relevancia de un cálculo en el desarrollo de un argumento y saber criticar sus debilidades. La estadística siempre fue eso; ahora ya no hay dónde esconderse - lo único que importa es la calidad del análisis y la pertinencia de los cálculos para ese análisis."
+  },
+  {
+    "objectID": "posts/2026-08-el-codigo-se-copia-y-pega/index.html#qué-hacemos-al-respecto",
+    "href": "posts/2026-08-el-codigo-se-copia-y-pega/index.html#qué-hacemos-al-respecto",
+    "title": "El código se copia y pega. El criterio, no.",
+    "section": "Qué hacemos al respecto",
+    "text": "Qué hacemos al respecto\nLa Farola vuelve, rediseñada para este mundo:\n\nTalleres donde el código no es requisito, el criterio sí. La teoría y la limpieza de datos llegan en video, para pausar y repetir. La sesión en vivo se reserva para lo que no puedes leer en un libro: diagnóstico, comparación, interpretación. Tú diriges; la máquina tipea.\nHerramientas libres. Estamos empaquetando nuestros años de plomería ENAHO, ENDES e INEI en general en un paquete de R de código abierto. Pronto en este boletín.\nLecciones gratis en video. La primera milla del trabajo mecánico, regalada. En La Farola cobramos por enseñarte criterio, no simplemente comandos.\nEste boletín, cada semana. Plomería de datos, IA bajo tu dirección, y de vez en cuando una herejía sobre cómo enseñamos economía."
+  },
+  {
+    "objectID": "posts/2026-08-el-codigo-se-copia-y-pega/index.html#lo-primero-datos-de-panel-con-dos-países-a-la-vez",
+    "href": "posts/2026-08-el-codigo-se-copia-y-pega/index.html#lo-primero-datos-de-panel-con-dos-países-a-la-vez",
+    "title": "El código se copia y pega. El criterio, no.",
+    "section": "Lo primero: datos de panel, con dos países a la vez",
+    "text": "Lo primero: datos de panel, con dos países a la vez\nEl miércoles 19 de agosto arranca nuestro taller de Modelos de Datos de Panel con R, y tiene algo que ningún curso de la región ofrece: cada método se aplica lado a lado a la ENAHO Panel (Perú) y a la ENOE (México).\n¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: ¿ser informal hoy te condena a ser informal mañana?\nSeis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito - el criterio econométrico básico, sí.\nVer el programa completo →\nEarly bird hasta el sábado 15 de agosto. Y si tienes dudas, escríbeme al WhatsApp - las respondo yo, no un bot.\n\nAh, y al profesor de Cusco: sí, este año lo enseñamos.\nLa mayoría usa la estadística como un borracho usa una farola: más para apoyarse que para iluminarse. Nosotros preferimos iluminar."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "El código se copia y pega. El criterio, no.\n\n\nLa Farola vuelve: talleres rediseñados para la era de la IA, y un taller de datos de panel con Perú y México lado a lado.\n\n\n\n\n\n7 ago 2026\n\n4 minutos\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "De la data cruda al paper publicado",
+    "section": "",
+    "text": "La mayoría usa la estadística como un borracho usa una farola: más para apoyarse que para iluminarse. La Farola existe para lo segundo - y para sostenerte mientras llegas.\nEnseñamos a investigadores, tesistas y analistas de política pública a convertir los microdatos públicos del Perú - ENAHO, ENDES, los archivos crudos del INEI con toda su mugre - en investigación publicable: flujos reproducibles en R, métodos aplicados con rigor y, cada vez más, IA bajo tu dirección (no al revés).\nTalleres en vivo, cursos, herramientas de código abierto y un boletín semanal. Sin humo: código real, datos reales, resultados que van directo a tu tesis o paper."
+  },
+  {
+    "objectID": "index.html#del-blog",
+    "href": "index.html#del-blog",
+    "title": "De la data cruda al paper publicado",
+    "section": "Del blog",
+    "text": "Del blog\n\n\n\n\n\nEl código se copia y pega. El criterio, no.\n\n\nLa Farola vuelve: talleres rediseñados para la era de la IA, y un taller de datos de panel con Perú y México lado a lado.\n\n\n\n\n\n7 ago 2026\n\n\n\n\n\nNo hay resultados\n\nTodos los posts →"
+  }
+]
