@@ -1,0 +1,74 @@
+---
+title: "El peso no es opcional"
+description: >
+  Cómo el sobremuestreo de la frontera norte de México fabrica un punto
+  entero de efecto en un DiD sin factores de expansión.
+author: "Gonzalo Urbina"
+date: 2026-08-28
+categories: [Métodos, ENOE, diferencias en diferencias]
+---
+
+En 2019 México duplicó el salario mínimo en 43 municipios de la frontera
+norte, junto con rebajas de IVA e ISR. Fue el caso de la sesión de
+diferencias en diferencias del taller de paneles, con la ENOE de 2018 y
+2019, y hay al menos tres trabajos publicados con el mismo diseño
+(Campos-Vázquez, Delgado y Rodas 2020; Alvarado, Orraca y Cabrera-Hernández
+2023; Cabrera-Hernández y Duval-Hernández 2026).
+
+Al armar las celdas apareció algo que ninguno de los tres discute.
+
+## El INEGI sobremuestreó la frontera
+
+Comparando el tamaño de muestra de 2019 contra 2018 en nuestros datos: la
+muestra de Mexicali se multiplicó por 2,1, la de Ciudad Juárez por 2,8 y
+la de Reynosa por 5,3. Baja California, Chihuahua y Tamaulipas crecieron
+entre 1,3 y 1,5 veces. El resto del país, 1,01. La explicación probable es
+una ampliación de muestra para evaluar el programa; la documentación
+oficial de esa ampliación no la hemos encontrado todavía, y lo decimos como
+pendiente.
+
+La consecuencia, en cambio, se mide.
+
+## Un punto entero fabricado
+
+Un DiD dos por dos sobre el log del salario, calculado como cuatro
+promedios de celda sin pesos, da +0,0100. Los mismos cuatro promedios con
+los factores de expansión dan −0,0001. Un punto porcentual de "efecto"
+producido por la composición de la muestra: en 2019 la frontera tiene
+muchos más observados, y los observados nuevos no se parecen a los viejos.
+
+Este ejercicio es una doble resta de celdas y no calcula errores estándar.
+Lo que muestra es cuánto cambia el número al pesar, no si alguno de los dos
+es distinto de cero; la inferencia con pocos municipios tratados es otro
+capítulo.
+
+La media cercana a cero abre la pregunta siguiente: si el promedio no se
+mueve, ¿para quién se mueve? Lo que encontramos en los percentiles está
+en [el post de resultados del taller](/posts/2026-09-04-lo-que-encontramos/index.html).
+
+## La regla
+
+Los factores de expansión entran en el estimador, en cada celda; si no, el
+estimador describe la muestra. De los tres trabajos publicados sobre esta
+reforma, ninguno pondera con `fac` dentro de la regresión: Campos-Vázquez y
+coautores ponderan por población municipal, Alvarado y coautores no
+ponderan, y Cabrera-Hernández y Duval-Hernández dicen "survey weights" sin
+decir cuál.
+
+En un panel de personas, además, el peso cambia de naturaleza. En la ENAHO
+panel es `facpanel`, el longitudinal, y no el transversal de cada año; los
+factores transversales de dos años distintos no se combinan. Cuando el INEI
+no publica un peso para el par de años que necesitas, se construye, se
+declara y va al pie de la tabla.
+
+Cobertura, para quien quiera replicar: de los 43 municipios del decreto,
+31 tienen muestra en la ENOE. Los 12 restantes son rurales y chicos.
+
+*Método: ENOE 2018-2019 (INEGI), tablas SDEM; municipios del decreto del
+31 de diciembre de 2018; DiD dos por dos con y sin `fac`, como diferencia
+de promedios de celda.*
+
+La plantilla de celdas con pesos sirve para cualquier experimento natural
+con la ENOE o la ENAHO;
+[escríbeme por WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20la%20plantilla%20de%20celdas%20DiD)
+y te la paso.

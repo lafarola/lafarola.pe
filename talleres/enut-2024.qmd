@@ -1,0 +1,101 @@
+---
+title: "ENUT 2024 en 2 horas"
+subtitle: "Sesión gratuita en vivo. Sábado 19 de septiembre, 9:00 a 11:00 am (Lima)."
+toc: false
+---
+
+::: {.card-curso}
+#### Sábado 19 de septiembre · 9:00 a 11:00 am · en vivo por Google Meet · gratis
+
+**100 cupos, con inscripción previa.** Te inscribes con tu correo, recibes
+el link de Google Meet y las instrucciones para llegar con los datos listos.
+
+[Inscríbete gratis →](https://lafarola.thinkific.com/products/live_events/enut-2024){.btn-farola}
+
+¿Prefieres WhatsApp?
+[Escríbeme y te mando el link](https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20quiero%20inscribirme%20a%20la%20sesi%C3%B3n%20gratuita%20de%20la%20ENUT%202024).
+:::
+
+## Cinco horas y siete minutos
+
+En un día de semana, las mujeres en el Perú dedican **5 horas y 7 minutos**
+al trabajo no remunerado: cocinar, limpiar, cuidar. Los hombres, **2 horas
+y 9 minutos**. Es la cifra oficial del INEI con la ENUT 2024, la primera
+encuesta de uso del tiempo del país en catorce años. Nosotros la
+reprodujimos al minuto desde los microdatos.
+
+La ENUT es una de las pocas herramientas que hace visible la economía del
+cuidado: quién cuida, cuánto tiempo, a costa de qué. La edición 2024 cambió
+de método (un diario de diez minutos en vez de una lista de actividades),
+casi nadie la ha abierto, y el número más citado del campo, trabajo
+doméstico no remunerado igual a 20,4% del PIB, sigue anclado en 2010.
+
+En dos horas te dejamos trabajando con ella.
+
+## Qué es
+
+Una sola sesión en vivo, gratuita, para investigadoras e investigadores que
+quieren usar la ENUT 2024 en una tesis, un paper o un informe. No es un
+curso de R ni de tidyverse: la clase arranca con los datos cargados y
+termina con cuadros tuyos.
+
+## Con qué sales
+
+- La ENUT 2024 cargada con las **llaves correctas** (el `ID` identifica la
+  vivienda, no el hogar) y los **factores de expansión correctos**, con las
+  etiquetas conservadas.
+- La cifra oficial **reproducida al minuto**, y las tres variantes que no
+  la reproducen, para que sepas exactamente qué estimador hay detrás del
+  número que citas.
+- Dos cuadros propios: horas de trabajo no remunerado por sexo bajo cuatro
+  definiciones, y la simultaneidad de actividades, que la encuesta de 2010
+  no podía medir.
+- Un **outline de tres replicaciones** posibles con la encuesta nueva: la
+  cuenta satélite del trabajo doméstico, la pobreza de tiempo y la demanda
+  de trabajo del hogar remunerado. Tres temas de tesis con la literatura
+  casi vacía.
+- El script completo y los datos preparados.
+
+## Programa
+
+| | |
+|---|---|
+| 9:00 | Qué cambió entre 2010 y 2024, y por qué no se comparan directo |
+| 9:15 | Cargar, llaves, factores, y comprobar contra la ficha técnica |
+| 9:45 | El diario de diez minutos y la réplica de la cifra oficial |
+| 10:05 | Dos cuadros propios: trabajo no remunerado por sexo, simultaneidad |
+| 10:35 | Las tres réplicas: qué pide cada una y qué cambia con el diario |
+| 10:55 | Preguntas |
+
+## Para quién
+
+Investigadoras e investigadores de género, cuidados, trabajo no remunerado
+y pobreza de tiempo. Tesistas y analistas que necesitan un indicador de uso
+del tiempo para un informe. Economistas que buscan un tema con datos
+frescos y competencia escasa.
+
+## Qué necesitas
+
+R y RStudio instalados. Al inscribirte recibes las instrucciones para
+descargar los tres módulos del INEI, y si nunca usaste R, el Módulo 0 de
+introducción (grabado). En la sesión el código viene escrito y lo corremos
+juntos.
+
+## Cómo inscribirte
+
+1. Entra al link de inscripción y crea tu cuenta con tu correo. Es gratis.
+2. Dentro encuentras el link de Google Meet y la lista de preparación.
+3. El viernes 18 te llega un recordatorio con todo.
+
+**¿No puedes el sábado?** Inscríbete igual: el lunes 21 sale la versión
+estudio de la sesión (20 minutos, sin nombres de asistentes) junto con la
+separata completa, a precio de separata (S/ 39 estudiantes, S/ 69
+profesionales). Los inscritos se enteran primero.
+
+## Quién dicta
+
+Gonzalo Urbina, economista. Enseña desde hace años a investigadores y
+tesistas a convertir los microdatos públicos del Perú en investigación
+publicable. La Farola: de la data cruda al paper publicado.
+
+[Inscríbete gratis →](https://lafarola.thinkific.com/products/live_events/enut-2024){.btn-farola}

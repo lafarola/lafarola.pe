@@ -1,0 +1,81 @@
+---
+title: "Catorce años sin encuesta de uso del tiempo. Ya hay una."
+description: >
+  La ENUT 2024 cambió de método, casi nadie la ha usado todavía y el número
+  más citado del campo sigue anclado en 2010. Qué hay adentro y por dónde
+  empezar.
+author: "Gonzalo Urbina"
+date: 2026-09-05
+categories: [Plomería de datos, ENUT, anuncios]
+---
+
+El número más citado sobre trabajo doméstico en el Perú tiene dieciséis
+años. La cuenta satélite del trabajo doméstico no remunerado (INEI y MIMP,
+2016) lo valorizó en **20,4 % del PIB**. El dato es de 2010. No existe una
+actualización oficial con la encuesta nueva; lo verificamos en agosto de
+2026.
+
+Entre la ENUT 2010 y la ENUT 2024 pasaron catorce años. La ley 29700, de
+2011, ordenó esa cuenta satélite y una encuesta de uso del tiempo cada
+cinco años. En el medio hubo un módulo dentro de la encuesta de empleo de
+2022 que, hasta donde encontramos, nadie ha explotado en público.
+
+## Qué cambió
+
+| | ENUT 2010 | ENUT 2024 |
+|---|---|---|
+| Método | Lista de actividades, recordatorio de la semana | Diario precodificado en intervalos de 10 minutos |
+| Días de referencia | Semana partida en lunes a viernes y sábado a domingo | Tres días: uno de semana, sábado y domingo |
+| Simultaneidad | No | Hasta tres actividades a la vez |
+| Viviendas | 4.580 según la ficha técnica | 6.056, en 757 conglomerados |
+| Edad | 12 y más | 12 y más |
+| Códigos de actividad | 128 ítems de lista | 120 códigos |
+
+El archivo del diario de 2024 tiene 1.925.501 filas: una por persona y
+por intervalo de diez minutos. Con ese cambio de instrumento, la de 2024
+es otra encuesta más que una segunda edición.
+
+## Por qué no se pueden comparar directo
+
+Una lista de actividades con recordatorio semanal y un diario de diez
+minutos miden cosas distintas, y las listas tienden a sobreestimar horas
+(Beltrán y Lavado corrigen ese sobre reporte en la ENUT 2010 en su trabajo
+de 2014). El primer uso académico de la ENUT 2024 que identificamos
+(Beltrán, Lavado y coautores, nota del CIUP, 2025) lo advierte: la
+comparación directa 2010-2024 no es válida sin un ejercicio de
+sensibilidad. Ese ejercicio, hasta donde encontramos, no existe publicado.
+
+La literatura arbitrada con la encuesta nueva está casi vacía. Para quien
+busca un tema de tesis o un paper con datos frescos, es una de las pocas
+encuestas del INEI con la literatura todavía por escribir.
+
+## La primera trampa, antes de cualquier cuadro
+
+El identificador `ID` de los archivos de 2024 identifica la **vivienda**,
+no el hogar. Hay 55 viviendas con más de un hogar. La llave de hogar es
+`ID + HOGAR`; con `ID` solo, el primer merge duplica personas. No está en
+el diccionario, y a nosotros nos costó una tarde.
+
+## Lo que haremos con ella
+
+El **sábado 19 de septiembre**, de 9 a 11 de la mañana, una sola sesión en
+vivo: cargar la ENUT 2024 con las llaves y los factores correctos,
+reproducir al minuto un indicador del informe oficial, construir dos
+cuadros propios, y salir con un outline de cómo se replican con la
+encuesta nueva tres trabajos hechos con la de 2010: la cuenta satélite,
+la pobreza de tiempo y la demanda de trabajo del hogar remunerado.
+
+Es gratis, con inscripción previa, y hay 100 cupos. Script y datos
+preparados incluidos.
+
+[Inscríbete gratis](https://lafarola.thinkific.com/products/live_events/enut-2024){.btn-farola}
+El programa completo está en [la página del mini](/talleres/enut-2024.html).
+
+*Fuentes: INEI, ENUT 2010 principales resultados (2011); INEI y MIMP,
+Cuenta Satélite del Trabajo Doméstico No Remunerado (2016); INEI, ENUT
+2024 principales resultados (2025); Beltrán y Lavado, "El impacto del uso
+del tiempo de las mujeres en el Perú", Documento de Discusión DD1409, CIUP
+(2014; versión publicada en Latin American Research Review, 2021); Beltrán, Lavado, Koechlin y
+Núñez, "Perú sin tiempo", CIUP (2025); microdatos de la ENUT 2024, portal
+de microdatos del INEI. Conteos de archivos verificados sobre los
+microdatos en agosto de 2026.*

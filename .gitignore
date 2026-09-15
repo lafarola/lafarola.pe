@@ -6,3 +6,6 @@
 
 # Docs internos de operación: NUNCA al repo público
 /PUBLICAR.md
+
+# Historial de R de la sesion local
+.Rhistory

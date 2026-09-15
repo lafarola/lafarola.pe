@@ -18,9 +18,9 @@ una máquina que será obsoleta en dos años.
 
 Se quedó pensando un momento y me preguntó: *"¿Y eso... lo enseñas?"*
 
-La pregunta me persigue desde entonces, porque resume algo más grande: **las
-herramientas de investigación cambiaron más rápido que la formación de los
-investigadores.** Y la brecha ya no está solamente donde solía estar.
+La pregunta me persigue desde entonces, porque resume algo más grande: las
+herramientas de investigación cambiaron más rápido que la formación de quienes
+investigan. Y la brecha ya no está donde solía estar.
 
 ## La brecha ha cambiado
 
@@ -29,66 +29,62 @@ doma los microdatos públicos del Perú. Unir 10 años de la ENAHO, armonizar
 etiquetas que cambian sin aviso, reconstruir deflactores espaciales desde la
 metodología oficial. Plomería fina, de la que una tesis depende.
 
-Seamos directos sobre lo que pasó: **hoy una IA escribe ese código en
-segundos.** El `map()` que tomaba un taller entero de explicar, sale gratis
-de un chat.
+Hoy una IA escribe ese código en segundos. El `map()` que tomaba un taller
+entero de explicar sale gratis de un chat.
 
-¿Eso mata el oficio? Al contrario. Lo sube de piso, te ahorras lo tedioso.
+Eso le quita al oficio la parte tediosa, y deja a la vista la otra. La IA te
+va a escribir un `map()` perfecto sobre un ubigeo que perdió el cero a la
+izquierda. Va a juntar 10 años de encuestas sin notar que una variable cambió
+de definición en 2019. Va a estimar tu modelo con el deflactor equivocado, con
+una atrición que sesga todo, con un peso muestral que no corresponde. Y te lo
+va a entregar con total confianza y en una tabla hermosa.
 
-La IA te va a escribir un `map()` perfecto... sobre un ubigeo que perdió el
-cero a la izquierda. O va a juntar 10 años de encuestas... sin notar que la
-variable cambió de definición en 2019. Peor aún, va a estimar tu modelo...
-con el deflactor equivocado, con una atrición que sesga todo, con un peso
-muestral que no corresponde. Y te lo va a entregar con total confianza, en
-una tabla hermosa y celebrando qué gran investigador resultaste.
-
-Ahora que el código se ha hecho tan fácil de conseguir es más obvio que nunca
-que no era la capacidad más importante en el desarrollo académico de nadie.
-Era simplemente una barrera difícil de superar en el camino. **Lo
-verdaderamente valioso es (y siempre fue) el criterio de la investigadora**:
-saber qué calcular y por qué; entender cuándo un cálculo está bien hecho y
-poder demostrarlo; explicar la relevancia de un cálculo en el desarrollo de
-un argumento y saber criticar sus debilidades. La estadística siempre fue
-eso; ahora ya no hay dónde esconderse - lo único que importa es la calidad
-del análisis y la pertinencia de los cálculos para ese análisis.
+Ahora que el código es tan fácil de conseguir, queda claro que nunca fue la
+capacidad más importante: era una barrera difícil de pasar en el camino. Lo
+valioso es, y siempre fue, el criterio de quien investiga. Saber qué calcular
+y por qué. Saber cuándo un cálculo está bien hecho y poder demostrarlo. Saber
+qué aporta ese cálculo al argumento y dónde es débil. La estadística siempre
+fue eso; lo que cambia es que ya no hay que pasar primero por la barrera.
 
 ## Qué hacemos al respecto
 
-La Farola vuelve, rediseñada para este mundo:
+La Farola vuelve, rediseñada para este mundo.
 
-- **Talleres donde el código no es requisito, el criterio sí.** La teoría y
-  la limpieza de datos llegan en video, para pausar y repetir. La sesión en
-  vivo se reserva para lo que no puedes leer en un libro: diagnóstico,
-  comparación, interpretación. Tú diriges; la máquina tipea.
-- **Herramientas libres.** Estamos empaquetando nuestros años de plomería
-  ENAHO, ENDES e INEI en general en un paquete de R de código abierto.
-  Pronto en este boletín.
-- **Lecciones gratis en video.** La primera milla del trabajo mecánico,
-  regalada. En La Farola cobramos por enseñarte criterio, no simplemente
-  comandos.
-- **Este boletín, cada semana.** Plomería de datos, IA bajo tu dirección, y
-  de vez en cuando una herejía sobre cómo enseñamos economía.
+Talleres donde el código no es requisito y el criterio sí. La teoría y la
+limpieza de datos llegan en video, para pausar y repetir. La sesión en vivo se
+reserva para lo que no se aprende en un libro: diagnóstico, comparación,
+interpretación. Tú diriges y la máquina tipea.
+
+Herramientas libres. Estamos empaquetando nuestros años de plomería con la
+ENAHO, la ENDES y el INEI en general en un paquete de R de código abierto.
+
+Lecciones gratis en video, con la primera milla del trabajo mecánico. En La
+Farola cobramos por enseñar criterio, no comandos.
+
+Y este boletín, cada semana: plomería de datos, IA bajo tu dirección y, de vez
+en cuando, una herejía sobre cómo enseñamos economía.
 
 ## Lo primero: datos de panel, con dos países a la vez
 
-El **miércoles 19 de agosto** arranca nuestro taller de **Modelos de Datos de
-Panel con R**, y tiene algo que ningún curso de la región ofrece: cada método
-se aplica lado a lado a la **ENAHO Panel (Perú)** y a la **ENOE (México)**.
+El miércoles 19 de agosto arranca nuestro taller de Modelos de Datos de Panel
+con R. No conocemos otro curso en la región que aplique cada método lado a
+lado a la ENAHO Panel (Perú) y a la ENOE (México).
 
 ¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos
 encuestas distintas, por fin distingues qué es del método y qué es de tus
 datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la
-pregunta que Perú y México comparten: *¿ser informal hoy te condena a ser
-informal mañana?*
+pregunta que Perú y México comparten: ¿ser informal hoy te condena a ser
+informal mañana?
 
 Seis sesiones en vivo, teoría y preparación en video, asesoría personal para
-tu propio proyecto. R no es requisito - el criterio econométrico básico, sí.
+tu propio proyecto. R no es requisito. Hace falta el criterio econométrico
+básico.
 
-[Ver el programa completo →](https://lafarola.thinkific.com/courses/panel){.btn-farola}
+[Ver el programa completo](https://lafarola.thinkific.com/courses/panel){.btn-farola}
 
-Early bird hasta el sábado 15 de agosto. Y si tienes dudas, escríbeme al
-[WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel)
-- las respondo yo, no un bot.
+Early bird hasta el sábado 15 de agosto. Si tienes dudas, escríbeme al
+[WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel):
+las respondo yo.
 
 ---
 
@@ -96,3 +92,15 @@ Ah, y al profesor de Cusco: sí, este año lo enseñamos.
 
 *La mayoría usa la estadística como un borracho usa una farola: más para
 apoyarse que para iluminarse. Nosotros preferimos iluminar.*
+
+---
+
+**Actualización, 15 de septiembre de 2026.** El taller de paneles se dictó
+entre el 19 de agosto y el 9 de septiembre: seis sesiones con catorce
+personas. Se está convirtiendo en separata (lecturas, código, datos y un
+video de repaso por lección) y se anunciará aquí cuando esté lista. El
+paquete de R y las lecciones gratis en video siguen en desarrollo, y el boletín
+no sostuvo la cadencia semanal durante el dictado a pesar de sí haberse actualizado. Lo que sí salió: seis
+resultados del taller en [este post](/posts/2026-09-04-lo-que-encontramos/index.html),
+y una sesión gratuita en vivo con la ENUT 2024 el sábado 19 de septiembre,
+con [inscripción aquí](https://lafarola.thinkific.com/products/live_events/enut-2024).

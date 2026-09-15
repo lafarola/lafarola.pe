@@ -1,0 +1,82 @@
+---
+title: "Cinco fotos sueltas y una película armada"
+description: >
+  Cómo entregan sus paneles el INEI y el INEGI, y por qué esa diferencia es
+  la primera lección de estructura de datos de panel.
+author: "Gonzalo Urbina"
+date: 2026-08-14
+categories: [Plomería de datos, paneles, ENAHO, ENOE]
+---
+
+Primera semana del taller de paneles y todavía no estimamos nada. Antes
+hay que armar los dos paneles: la ENAHO panel 2021-2025 del INEI y la ENOE
+del INEGI. Misma tarea, dos institutos, dos formas de entregar los datos.
+La diferencia es una buena primera lección sobre qué es un panel.
+
+## El INEI te entrega la película armada
+
+La edición panel de la ENAHO llega ancha y ya emparejada. Cada variable
+trae un sufijo de año, de `_21` a `_25`, y las llaves de hogar y de
+persona (`numpanh`, `numper`) vienen resueltas. El archivo sumaria tiene
+868 columnas; el módulo de empleo, 7.296. Nadie tiene que emparejar olas a
+mano: la preparación es un pivot de ancho a largo.
+
+Dos cosas que conviene saber antes de empezar. El archivo trae la ENAHO
+anual completa, no solo la muestra panel: los hogares que se siguen de un
+año a otro se marcan con `tipenc` y son entre 11.780 y 12.315 por año,
+unas 36 a 38 mil personas. Y el panel no trae las variables derivadas:
+ocupación e informalidad se construyen desde las preguntas del módulo de
+empleo. El peso que corresponde es `facpanel`, el factor longitudinal, y
+no el factor transversal de cada año.
+
+## El INEGI te entrega cinco fotos sueltas
+
+La ENOE llega como un archivo por trimestre. Para nuestra ventana, cinco:
+de 2025T1 a 2026T1. Emparejar a las personas de una foto a la siguiente es
+trabajo del usuario, con las llaves de vivienda, hogar y número de renglón,
+y con una validación: sexo y edad tienen que coincidir de una ola a otra.
+La razón es que el número de renglón nombra una posición en el roster del
+hogar, no a una persona. Si alguien se va y otro entra, la posición puede
+reasignarse, y un emparejamiento sin validación produce pares falsos que el
+código acepta.
+
+Los números de la cohorte que entró en 2025T1:
+
+| Cohorte 2025T1 | Cifra |
+|---|---|
+| Viviendas | 25.521 |
+| Retención por ola | 100, 88, 85, 82 y 81,6 % |
+| Personas con las cinco olas | 57.588 |
+
+Sobre la validación, lo que vimos en clase fue menos dramático que la
+advertencia. Con la llave completa, el par 2025T1 a 2025T2 da 73.516 pares
+y ninguna falla de sexo o edad: a un trimestre de distancia, los filtros
+del INEGI hacen su trabajo. El riesgo está en el otro lado. Exigir la edad
+exacta, en vez de admitir un año de diferencia, bota el 23 % de los pares
+por ruido de declaración, sin ganar nada a cambio. La regla de validación
+se elige mirando el estimador que viene después, y se declara.
+
+## El contraste que se vuelve lección
+
+La ENAHO balanceada a cinco años tiene 4.820 personas. La ENOE tiene
+57.588 con cinco trimestres. Un panel largo y chico contra uno corto y
+enorme. Ningún diseño es mejor en abstracto: cada método rinde distinto
+según cuál de los dos tienes en frente, y por eso el taller corre cada
+modelo sobre ambos.
+
+En la sección de datos de un paper con cualquiera de los dos van, como
+mínimo: la ventana y por qué termina donde termina; cómo rota la muestra y
+qué traslape promete el diseño; con qué llave se emparejó y cuántos pares
+rechazó la validación; un cuadro con cuántas unidades había al inicio,
+cuántas quedan y cada exclusión intermedia; y qué factor entra en cada
+cálculo. De los once trabajos aplicados que leímos para el taller, nueve
+no mencionan la atrición y ninguno mete los pesos de la encuesta en la
+regresión.
+
+*Método: ENAHO panel 2021-2025 (INEI), módulos sumaria, empleo, miembros
+y educación; ENOE 2025T1-2026T1 (INEGI), tablas SDEM, emparejamiento por
+vivienda, hogar y renglón con validación de sexo y edad.*
+
+El script de emparejamiento con la validación está disponible para quien
+trabaje con cualquiera de los dos paneles:
+[pídemelo por WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20emparejamiento).

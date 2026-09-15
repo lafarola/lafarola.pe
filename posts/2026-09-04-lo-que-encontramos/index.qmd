@@ -1,0 +1,156 @@
+---
+title: "Lo que encontramos siguiendo a las mismas personas"
+description: >
+  Seis resultados de cuatro semanas de taller con la ENAHO panel y la ENOE,
+  con el método al pie de cada uno y lo que dice la literatura sobre el
+  mismo problema.
+author: "Gonzalo Urbina"
+date: 2026-09-04
+categories: [Métodos, paneles, taller]
+---
+
+Esto es lo que corrimos y discutimos en cuatro semanas de taller con
+microdatos públicos que cualquiera puede descargar: la ENAHO panel
+2021-2025 del INEI y la ENOE del INEGI. Seis resultados, cada uno con su
+método al pie y con lo que dice la literatura publicada sobre el mismo
+problema, porque ninguno de los seis parte de cero.
+
+## 1. La puerta giratoria de la pobreza
+
+La foto anual dice cuántos pobres hay. La película dice quiénes. Siguiendo
+a las mismas personas de 2024 a 2025 en la ENAHO panel: de quienes eran
+pobres en 2024, el 43,9 % había salido de la pobreza un año después. De
+quienes no lo eran, el 13,2 % cayó. Una tasa de pobreza que se mueve poco
+de un año a otro puede esconder mucho movimiento de personas, y ese
+movimiento solo se ve siguiéndolas.
+
+En México la película es trimestral: el 14,2 % de las personas cambia de
+situación de empleo principal (formal, informal, fuera de la ocupación)
+entre un trimestre y el siguiente.
+
+*Método: transiciones 2024 a 2025 con el factor longitudinal (facpanel)
+sobre personas presentes en ambas olas; ENOE 2025T1-2026T1 emparejada por
+vivienda y persona a lo largo de cinco olas.*
+
+## 2. El salario mínimo mexicano muerde donde se cumple
+
+En 2019 el salario mínimo se duplicó en la frontera norte de México. Con
+la ENOE, celdas ponderadas y una doble resta: el salario promedio no cambia
+(−0,0001 en log), el percentil 25 sube 5,5 puntos log más que en el resto
+del país, y la banda de trabajadores directamente obligados por el nuevo
+mínimo se vacía 6,2 puntos más que en el control. El efecto está en la cola
+baja y el promedio no lo muestra. Alvarado, Orraca y Cabrera-Hernández
+(2023), con la misma encuesta y regresiones de cuantil incondicional, lo
+encuentran en el mismo lugar: los cuantiles 25 y 50 de los formales y el 25
+de los informales.
+
+Dos cautelas. El programa incluyó rebajas de IVA e ISR, así que lo estimado
+es el paquete completo, no el mínimo solo; ningún trabajo publicado ha
+logrado separarlos. Y nuestro ejercicio no calcula errores estándar: son
+diferencias de celdas, y con pocos municipios tratados la inferencia
+honesta es por permutación, que quedó pendiente. Sin factores de expansión,
+el sobremuestreo del INEGI en la frontera añade un punto porcentual al
+promedio; [el post anterior](/posts/2026-08-28-el-peso-no-es-opcional/index.html)
+lo cuenta.
+
+*Método: ENOE 2018-2019, 31 de los 43 municipios del decreto con muestra;
+diferencias de percentiles y de proporciones por celda, con los factores de
+expansión oficiales; sin regresión.*
+
+## 3. El mínimo peruano de 2022, visto desde el panel
+
+Con la ENAHO panel: bandas salariales definidas sobre el ingreso de 2021 y
+resultado en 2023, saltando el año del cambio (mayo de 2022). La moda del
+salario formal migra de 930 a 1.025 soles, que es la firma del decreto en
+los datos. La banda obligada de los formales crece 8,4 puntos log por
+encima de lo que predice la curva de reversión a la media, con un tope
+mecánico de 9,7 (lo que va de 930 a 1.025).
+
+Ese 8,4 sale de 83 asalariados formales en la banda, sin error estándar, y
+se mueve con la pesada: la brecha contra la banda vecina, descontado el
+placebo, va de 0,15 a 0,27 según el peso, y sobre el subpanel balanceado,
+con 20 tratados, desaparece. Se reporta como orden de magnitud compatible
+con el empuje de la norma, no como efecto puntual.
+
+Lo que dice la literatura: los cuatro trabajos peruanos con este diseño de
+bandas (Jaramillo y López 2006, Del Valle 2009, Jaramillo 2012, Céspedes y
+Sánchez 2013) usan la Encuesta Permanente de Empleo de Lima. Que sepamos,
+esta es la primera pasada con la ENAHO panel nacional; gana cobertura y
+atrición medida, y paga con celdas chicas.
+
+Un año después del alza, el 20,5 % de los asalariados formales de la
+muestra declaraba un ingreso mensual por debajo de 1.025 soles (34 % si se
+cuenta a los informales); en 2021, antes del alza, eran 29,5 % y 43,6 %.
+Parte es incumplimiento y parte es que el ingreso de la ENAHO es anual y se
+divide entre doce, con lo que los meses sin trabajo bajan el promedio.
+
+*Método: ENAHO panel 2021-2025, bandas 2021 y resultado 2023, control por
+reversión a la media (curva ajustada fuera de la zona del mínimo), pesos
+propios por probabilidad inversa porque los factores oficiales no se
+combinan entre pares de años; proporciones bajo el mínimo con ingreso
+nominal y sin pesos.*
+
+## 4. El ingreso no se pega tanto como parece
+
+La persistencia del ingreso laboral parece alta: alrededor de 0,6 de un
+período al siguiente en la regresión agrupada. Con Arellano-Bond (dos
+etapas, corrección de Windmeijer, instrumentos colapsados) el arrastre
+período a período baja a 0,04 en la ENAHO y 0,03 en la ENOE, con
+diagnósticos que no rechazan: AR(2) con p de 0,96 y 0,94, Sargan con p de
+0,23 y 0,25, seis instrumentos.
+
+Hay dos lecturas y las dos son compatibles con el número. Una: casi toda
+la persistencia era heterogeneidad, cada quien es quien es. Otra: el
+ingreso declarado tiene error de medida, y Antman y McKenzie (2005)
+muestran, con la encuesta antecesora de la ENOE, que ese error empuja el
+estimador hacia cero; en su caso los datos individuales dan 0,02 y el
+pseudo-panel 0,73. Con lo que corrimos no se puede separar una lectura de
+la otra, y así se reporta.
+
+El detalle técnico: el estimador de efectos fijos reporta la persistencia
+con signo negativo, −0,34 en la ENAHO. Es el sesgo de Nickell (1981), cuya
+fórmula reproduce el número, y en el taller lo simulamos para ver de dónde
+sale.
+
+*Método: ENAHO panel 2021-2025 (anual) y ENOE (trimestral); Arellano-Bond
+en dos etapas con corrección de Windmeijer, instrumentos colapsados; tests
+AR(2) y de Sargan reportados con su p.*
+
+## 5. El gasto sí se suaviza, y el tablero que lo vigila
+
+Persistencia del gasto del hogar 0,18, del ingreso del hogar 0,12, del
+ingreso individual 0,04: el orden que predice la teoría del ingreso
+permanente. Pero el test de Sargan rechaza en las dos ecuaciones del hogar
+(p = 0,000 en gasto y en ingreso), así que esos dos puntos no están
+validados por su propio diagnóstico. Lo que se puede reportar es el orden,
+con la advertencia escrita; el punto, no.
+
+*Método: los mismos estimadores de (4) sobre gasto e ingreso per cápita
+del hogar; Sargan rechaza en ambas ecuaciones del hogar y se dice.*
+
+## 6. La autopsia: cómo un control de más voltea un signo
+
+Replicamos una tesis sobre el Bono Familiar Universal con la ENAHO panel
+2017-2021. Su coeficiente se reproduce en signo, tamaño y no significancia
+(−0,0032 contra −0,0025 en la tesis; ninguno distinto de cero). Luego
+agregamos un control mal elegido, el gasto del hogar, que es ingrediente de
+la variable dependiente: el signo cambia y el R² within pasa de 0 a 0,35.
+Un R² que sube de golpe al agregar una variable puede ser el síntoma de un
+control que no debía entrar.
+
+No nombramos a la autora: el error es de manual y el ejemplo sirve igual
+sin nombre.
+
+*Método: ENAHO panel 2017-2021, efectos fijos dos por dos con errores
+agrupados por hogar; la especificación de la tesis y la misma con el
+control de más.*
+
+---
+
+Cuatro semanas, dos encuestas, seis resultados con sus cautelas escritas.
+
+Lo próximo es una encuesta nueva: **ENUT 2024 en 2 horas**, una sesión
+gratuita en vivo el sábado 19 de septiembre a las 9 de la mañana, con
+script y datos preparados.
+[Inscríbete gratis](https://lafarola.thinkific.com/products/live_events/enut-2024){.btn-farola}
+El programa completo está en [la página del mini](/talleres/enut-2024.html).

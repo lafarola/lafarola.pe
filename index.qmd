@@ -29,15 +29,17 @@ Sin humo: código real, datos reales, resultados que van directo a tu tesis o
 paper.
 
 ::: {.card-curso}
-#### Taller en curso -Modelos de Datos de Panel con R
+#### Sesión gratuita - ENUT 2024 en 2 horas
 
-**ENAHO Panel (Perú) y ENOE (México), lado a lado.** Efectos fijos,
-diferencias en diferencias, Arellano-Bond - el mismo modelo enfrentado a dos
-encuestas, para distinguir qué es del método y qué es de tus datos. Seis
-sesiones en vivo, del 19 de agosto al 5 de septiembre de 2026. Early bird
-hasta el 15 de agosto.
+**5 horas y 7 minutos al día de trabajo no remunerado para las mujeres;
+2 horas y 9 minutos para los hombres.** Es la cifra oficial de la primera
+encuesta de uso del tiempo del Perú en catorce años, y la reprodujimos al
+minuto. Una sesión en vivo y gratuita para dejarte trabajando con la ENUT
+2024: llaves y factores correctos, la cifra oficial reproducida, dos cuadros
+propios y tres réplicas posibles. Sábado 19 de septiembre, 9 a 11 am. Script
+y datos incluidos. 100 cupos.
 
-[Ver el programa completo →](https://lafarola.thinkific.com/courses/panel){.btn-farola}
+[Inscríbete gratis →](talleres/enut-2024.qmd){.btn-farola}
 :::
 
 ## Del blog

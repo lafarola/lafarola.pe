@@ -3,8 +3,10 @@ project:
   render:
     - "*.qmd"
     - "posts/**/*.qmd"
+    - "talleres/**/*.qmd"
   resources:
     - CNAME
+    - "ads/**"
 
 lang: es
 
@@ -19,6 +21,8 @@ website:
     left:
       - text: "Blog"
         href: blog.qmd
+      - text: "Mini-talleres"
+        href: talleres/enut-2024.qmd
       - text: "Cursos"
         href: "https://lafarola.thinkific.com"
     right:

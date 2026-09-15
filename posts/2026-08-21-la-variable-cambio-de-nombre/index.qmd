@@ -1,0 +1,65 @@
+---
+title: "La variable cambió de nombre a mitad de tu ventana"
+description: >
+  El INEGI renombró la geografía de la ENOE entre dos trimestres de 2025.
+  Qué hacer cuando el esquema se mueve dentro de tu propio panel.
+author: "Gonzalo Urbina"
+date: 2026-08-21
+categories: [Plomería de datos, ENOE, ENAHO]
+---
+
+Al apilar los cinco trimestres de la ENOE para el taller apareció algo que
+no estaba en la documentación: entre 2025T2 y 2025T3 el INEGI renombró las
+variables de geografía. `ent` pasó a ser `cve_ent`, `mun` a `cve_mun`,
+`loc` a `cve_loc`, `ageb` a `cve_ageb`, y apareció una clave nueva,
+`cvegeo`. El archivo pasó de 114 a 115 columnas. Todo esto dentro de los
+quince meses de nuestra propia ventana.
+
+Un `bind_rows()` no falla: crea las dos versiones de cada columna, cada
+una con la mitad de los valores vacíos, y el modelo corre igual.
+
+## Y los tipos también se movieron
+
+Segunda sorpresa: la clave de entidad llega numérica en 2025 y como texto
+en 2026. Un "1" contra un "01". Un emparejamiento por llave numérica
+contra una de texto tampoco falla: simplemente no encuentra pares. Es el
+mismo problema del ubigeo peruano que pierde el cero a la izquierda cuando
+alguien lo guarda como número.
+
+La regla que salió de esa tarde: las llaves son siempre texto normalizado,
+con ceros a la izquierda y el mismo ancho en todas las olas, antes de
+cualquier emparejamiento.
+
+## El peso también cambió de nombre
+
+El factor `fac` de las ediciones viejas de la ENOE ya no existe. Ahora se
+llama `fac_tri`, y hay un `fac_men` mensual. Si un script viejo lo llama
+como `datos$fac` dentro de `weights =`, R no protesta: `$` devuelve NULL y
+la regresión corre sin pesos. Dentro de una tubería de `dplyr` la columna
+inexistente sí detiene el script, que es el mejor de los dos casos.
+
+Lo mismo pasa con la ENDES, que renumera sus tablas entre ediciones, y con
+la ENAHO, que cambia nombres de variables entre años. Es lo normal en los
+microdatos públicos.
+
+## Qué hacer, en orden
+
+1. Diagnóstico de esquema antes de apilar: una tabla con nombres y tipos
+   de cada variable por archivo. Toma cinco minutos y evita el modelo con
+   la mitad de los datos.
+2. Armonizar a un estándar y decir cuál. Nosotros elegimos el nuevo del
+   INEGI (`cve_*`), porque es hacia donde van los archivos futuros.
+3. Llaves como texto, siempre, con ancho fijo.
+4. El crosswalk se guarda como dato, no como código.
+
+Sobre el último punto vale la pena detenerse. Una tabla que dice "en
+2025T2 esta variable se llamaba así" es un archivo que se lee, se revisa y
+sobrevive al siguiente cambio de nombre; un `rename()` enterrado en un
+script se olvida, y el siguiente trimestre lo rompe otra vez.
+
+*Método: tablas SDEM de la ENOE 2025T1-2026T1 (INEGI), comparación de
+esquema por archivo antes del apilado.*
+
+Si quieres el script de diagnóstico de esquema para tus propios archivos,
+[escríbeme por WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20diagn%C3%B3stico%20de%20esquema)
+y te lo mando.
