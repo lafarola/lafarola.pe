@@ -61,5 +61,5 @@ script se olvida, y el siguiente trimestre lo rompe otra vez.
 esquema por archivo antes del apilado.*
 
 Si quieres el script de diagnóstico de esquema para tus propios archivos,
-[escríbeme por WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20diagn%C3%B3stico%20de%20esquema)
-y te lo mando.
+escríbeme a [gonzalo@lafarola.pe](mailto:gonzalo@lafarola.pe) y te lo
+mando.

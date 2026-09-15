@@ -14,10 +14,10 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1322791560910541&ev=PageView&noscript=1"
 /></noscript>
-<!-- Lead al click de WhatsApp: primera señal de compra peruana para Meta -->
+<!-- Lead al click de contacto (correo o WhatsApp): primera señal de compra para Meta -->
 <script>
 document.addEventListener('click', function (e) {
-  var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"], a[href*="wa.me"]') : null;
   if (a && window.fbq) { fbq('track', 'Lead', {content_name: window.location.pathname}); }
 });
 </script>

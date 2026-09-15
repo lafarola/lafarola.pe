@@ -69,6 +69,5 @@ Cobertura, para quien quiera replicar: de los 43 municipios del decreto,
 de promedios de celda.*
 
 La plantilla de celdas con pesos sirve para cualquier experimento natural
-con la ENOE o la ENAHO;
-[escríbeme por WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20la%20plantilla%20de%20celdas%20DiD)
-y te la paso.
+con la ENOE o la ENAHO; escríbeme a
+[gonzalo@lafarola.pe](mailto:gonzalo@lafarola.pe) y te la paso.

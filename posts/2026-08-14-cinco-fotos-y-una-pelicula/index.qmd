@@ -78,5 +78,5 @@ y educación; ENOE 2025T1-2026T1 (INEGI), tablas SDEM, emparejamiento por
 vivienda, hogar y renglón con validación de sexo y edad.*
 
 El script de emparejamiento con la validación está disponible para quien
-trabaje con cualquiera de los dos paneles:
-[pídemelo por WhatsApp](https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20emparejamiento).
+trabaje con cualquiera de los dos paneles: pídemelo a
+[gonzalo@lafarola.pe](mailto:gonzalo@lafarola.pe).
