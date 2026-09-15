@@ -20,7 +20,7 @@ sostenerte mientras llegas.
 
 Enseñamos a investigadores, tesistas y analistas de política pública a
 convertir los microdatos públicos del Perú - ENAHO, ENDES, los archivos crudos
-del INEI con toda su mugre - en investigación publicable: flujos reproducibles
+del INEI con todo su ruido - en investigación publicable: flujos reproducibles
 en R, métodos aplicados con rigor y, cada vez más, IA bajo tu dirección (no al
 revés).
 
