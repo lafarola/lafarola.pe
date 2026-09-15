@@ -187,7 +187,7 @@
 <p>En un panel de personas, además, el peso cambia de naturaleza. En la ENAHO panel es <code>facpanel</code>, el longitudinal, y no el transversal de cada año; los factores transversales de dos años distintos no se combinan. Cuando el INEI no publica un peso para el par de años que necesitas, se construye, se declara y va al pie de la tabla.</p>
 <p>Cobertura, para quien quiera replicar: de los 43 municipios del decreto, 31 tienen muestra en la ENOE. Los 12 restantes son rurales y chicos.</p>
 <p><em>Método: ENOE 2018-2019 (INEGI), tablas SDEM; municipios del decreto del 31 de diciembre de 2018; DiD dos por dos con y sin <code>fac</code>, como diferencia de promedios de celda.</em></p>
-<p>La plantilla de celdas con pesos sirve para cualquier experimento natural con la ENOE o la ENAHO; <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20la%20plantilla%20de%20celdas%20DiD">escríbeme por WhatsApp</a> y te la paso.</p>
+<p>La plantilla de celdas con pesos sirve para cualquier experimento natural con la ENOE o la ENAHO; escríbeme a <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a> y te la paso.</p>
 
 
 </section>
@@ -230,7 +230,7 @@
 </ol>
 <p>Sobre el último punto vale la pena detenerse. Una tabla que dice “en 2025T2 esta variable se llamaba así” es un archivo que se lee, se revisa y sobrevive al siguiente cambio de nombre; un <code>rename()</code> enterrado en un script se olvida, y el siguiente trimestre lo rompe otra vez.</p>
 <p><em>Método: tablas SDEM de la ENOE 2025T1-2026T1 (INEGI), comparación de esquema por archivo antes del apilado.</em></p>
-<p>Si quieres el script de diagnóstico de esquema para tus propios archivos, <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20diagn%C3%B3stico%20de%20esquema">escríbeme por WhatsApp</a> y te lo mando.</p>
+<p>Si quieres el script de diagnóstico de esquema para tus propios archivos, escríbeme a <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a> y te lo mando.</p>
 
 
 </section>
@@ -290,7 +290,7 @@
 <p>La ENAHO balanceada a cinco años tiene 4.820 personas. La ENOE tiene 57.588 con cinco trimestres. Un panel largo y chico contra uno corto y enorme. Ningún diseño es mejor en abstracto: cada método rinde distinto según cuál de los dos tienes en frente, y por eso el taller corre cada modelo sobre ambos.</p>
 <p>En la sección de datos de un paper con cualquiera de los dos van, como mínimo: la ventana y por qué termina donde termina; cómo rota la muestra y qué traslape promete el diseño; con qué llave se emparejó y cuántos pares rechazó la validación; un cuadro con cuántas unidades había al inicio, cuántas quedan y cada exclusión intermedia; y qué factor entra en cada cálculo. De los once trabajos aplicados que leímos para el taller, nueve no mencionan la atrición y ninguno mete los pesos de la encuesta en la regresión.</p>
 <p><em>Método: ENAHO panel 2021-2025 (INEI), módulos sumaria, empleo, miembros y educación; ENOE 2025T1-2026T1 (INEGI), tablas SDEM, emparejamiento por vivienda, hogar y renglón con validación de sexo y edad.</em></p>
-<p>El script de emparejamiento con la validación está disponible para quien trabaje con cualquiera de los dos paneles: <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20emparejamiento">pídemelo por WhatsApp</a>.</p>
+<p>El script de emparejamiento con la validación está disponible para quien trabaje con cualquiera de los dos paneles: pídemelo a <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a>.</p>
 
 
 </section>
@@ -337,7 +337,7 @@
 <p>¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: ¿ser informal hoy te condena a ser informal mañana?</p>
 <p>Seis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito. Hace falta el criterio econométrico básico.</p>
 <p><a href="https://lafarola.thinkific.com/courses/panel" class="btn-farola">Ver el programa completo</a></p>
-<p>Early bird hasta el sábado 15 de agosto. Si tienes dudas, escríbeme al <a href="https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel">WhatsApp</a>: las respondo yo.</p>
+<p>Early bird hasta el sábado 15 de agosto. Si tienes dudas, escríbeme a <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a>: las respondo yo.</p>
 <hr>
 <p>Ah, y al profesor de Cusco: sí, este año lo enseñamos.</p>
 <p><em>La mayoría usa la estadística como un borracho usa una farola: más para apoyarse que para iluminarse. Nosotros preferimos iluminar.</em></p>

@@ -90,10 +90,10 @@ fbq('init', '1322791560910541');
 fbq('track', 'PageView');
 </script>
 <noscript></noscript></head><body class="nav-fixed fullcontent quarto-light"><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1322791560910541&amp;ev=PageView&amp;noscript=1">
-<!-- Lead al click de WhatsApp: primera señal de compra peruana para Meta -->
+<!-- Lead al click de contacto (correo o WhatsApp): primera señal de compra para Meta -->
 <script>
 document.addEventListener('click', function (e) {
-  var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"], a[href*="wa.me"]') : null;
   if (a && window.fbq) { fbq('track', 'Lead', {content_name: window.location.pathname}); }
 });
 </script>
@@ -222,7 +222,7 @@ document.addEventListener('click', function (e) {
 <p>¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: ¿ser informal hoy te condena a ser informal mañana?</p>
 <p>Seis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito. Hace falta el criterio econométrico básico.</p>
 <p><a href="https://lafarola.thinkific.com/courses/panel" class="btn-farola">Ver el programa completo</a></p>
-<p>Early bird hasta el sábado 15 de agosto. Si tienes dudas, escríbeme al <a href="https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel">WhatsApp</a>: las respondo yo.</p>
+<p>Early bird hasta el sábado 15 de agosto. Si tienes dudas, escríbeme a <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a>: las respondo yo.</p>
 <hr>
 <p>Ah, y al profesor de Cusco: sí, este año lo enseñamos.</p>
 <p><em>La mayoría usa la estadística como un borracho usa una farola: más para apoyarse que para iluminarse. Nosotros preferimos iluminar.</em></p>
@@ -645,7 +645,7 @@ document.addEventListener('click', function (e) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><strong>La Farola</strong> · De la data cruda al paper publicado · <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a> · <a href="https://wa.me/51971333867">WhatsApp</a></p>
+<p><strong>La Farola</strong> · De la data cruda al paper publicado · <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

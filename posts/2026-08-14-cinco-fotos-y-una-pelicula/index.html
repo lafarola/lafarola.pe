@@ -90,10 +90,10 @@ fbq('init', '1322791560910541');
 fbq('track', 'PageView');
 </script>
 <noscript></noscript></head><body class="nav-fixed fullcontent quarto-light"><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1322791560910541&amp;ev=PageView&amp;noscript=1">
-<!-- Lead al click de WhatsApp: primera señal de compra peruana para Meta -->
+<!-- Lead al click de contacto (correo o WhatsApp): primera señal de compra para Meta -->
 <script>
 document.addEventListener('click', function (e) {
-  var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"], a[href*="wa.me"]') : null;
   if (a && window.fbq) { fbq('track', 'Lead', {content_name: window.location.pathname}); }
 });
 </script>
@@ -238,7 +238,7 @@ document.addEventListener('click', function (e) {
 <p>La ENAHO balanceada a cinco años tiene 4.820 personas. La ENOE tiene 57.588 con cinco trimestres. Un panel largo y chico contra uno corto y enorme. Ningún diseño es mejor en abstracto: cada método rinde distinto según cuál de los dos tienes en frente, y por eso el taller corre cada modelo sobre ambos.</p>
 <p>En la sección de datos de un paper con cualquiera de los dos van, como mínimo: la ventana y por qué termina donde termina; cómo rota la muestra y qué traslape promete el diseño; con qué llave se emparejó y cuántos pares rechazó la validación; un cuadro con cuántas unidades había al inicio, cuántas quedan y cada exclusión intermedia; y qué factor entra en cada cálculo. De los once trabajos aplicados que leímos para el taller, nueve no mencionan la atrición y ninguno mete los pesos de la encuesta en la regresión.</p>
 <p><em>Método: ENAHO panel 2021-2025 (INEI), módulos sumaria, empleo, miembros y educación; ENOE 2025T1-2026T1 (INEGI), tablas SDEM, emparejamiento por vivienda, hogar y renglón con validación de sexo y edad.</em></p>
-<p>El script de emparejamiento con la validación está disponible para quien trabaje con cualquiera de los dos paneles: <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20emparejamiento">pídemelo por WhatsApp</a>.</p>
+<p>El script de emparejamiento con la validación está disponible para quien trabaje con cualquiera de los dos paneles: pídemelo a <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a>.</p>
 
 
 </section>
@@ -656,7 +656,7 @@ document.addEventListener('click', function (e) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><strong>La Farola</strong> · De la data cruda al paper publicado · <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a> · <a href="https://wa.me/51971333867">WhatsApp</a></p>
+<p><strong>La Farola</strong> · De la data cruda al paper publicado · <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;

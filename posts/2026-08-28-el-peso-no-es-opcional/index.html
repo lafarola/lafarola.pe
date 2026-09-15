@@ -90,10 +90,10 @@ fbq('init', '1322791560910541');
 fbq('track', 'PageView');
 </script>
 <noscript></noscript></head><body class="nav-fixed fullcontent quarto-light"><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1322791560910541&amp;ev=PageView&amp;noscript=1">
-<!-- Lead al click de WhatsApp: primera señal de compra peruana para Meta -->
+<!-- Lead al click de contacto (correo o WhatsApp): primera señal de compra para Meta -->
 <script>
 document.addEventListener('click', function (e) {
-  var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+  var a = e.target && e.target.closest ? e.target.closest('a[href^="mailto:"], a[href*="wa.me"]') : null;
   if (a && window.fbq) { fbq('track', 'Lead', {content_name: window.location.pathname}); }
 });
 </script>
@@ -217,7 +217,7 @@ document.addEventListener('click', function (e) {
 <p>En un panel de personas, además, el peso cambia de naturaleza. En la ENAHO panel es <code>facpanel</code>, el longitudinal, y no el transversal de cada año; los factores transversales de dos años distintos no se combinan. Cuando el INEI no publica un peso para el par de años que necesitas, se construye, se declara y va al pie de la tabla.</p>
 <p>Cobertura, para quien quiera replicar: de los 43 municipios del decreto, 31 tienen muestra en la ENOE. Los 12 restantes son rurales y chicos.</p>
 <p><em>Método: ENOE 2018-2019 (INEGI), tablas SDEM; municipios del decreto del 31 de diciembre de 2018; DiD dos por dos con y sin <code>fac</code>, como diferencia de promedios de celda.</em></p>
-<p>La plantilla de celdas con pesos sirve para cualquier experimento natural con la ENOE o la ENAHO; <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20la%20plantilla%20de%20celdas%20DiD">escríbeme por WhatsApp</a> y te la paso.</p>
+<p>La plantilla de celdas con pesos sirve para cualquier experimento natural con la ENOE o la ENAHO; escríbeme a <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a> y te la paso.</p>
 
 
 </section>
@@ -635,7 +635,7 @@ document.addEventListener('click', function (e) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p><strong>La Farola</strong> · De la data cruda al paper publicado · <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a> · <a href="https://wa.me/51971333867">WhatsApp</a></p>
+<p><strong>La Farola</strong> · De la data cruda al paper publicado · <a href="mailto:gonzalo@lafarola.pe">gonzalo@lafarola.pe</a></p>
 </div>
     <div class="nav-footer-right">
       &nbsp;
