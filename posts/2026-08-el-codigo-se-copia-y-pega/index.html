@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -14,10 +14,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea72da1166b1bb9385a101dafcaab36a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-6f4c31e05982fe9d7c1d5110dfef5365.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ff7afeb9aee0970d116ca6e70626541d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c456732e0e49988bcb6397b7a2344455.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -87,6 +90,13 @@ fbq('init', '1322791560910541');
 fbq('track', 'PageView');
 </script>
 <noscript></noscript></head><body class="nav-fixed fullcontent quarto-light"><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1322791560910541&amp;ev=PageView&amp;noscript=1">
+<!-- Lead al click de WhatsApp: primera señal de compra peruana para Meta -->
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+  if (a && window.fbq) { fbq('track', 'Lead', {content_name: window.location.pathname}); }
+});
+</script>
 <!-- End Meta Pixel Code -->
 
 
@@ -116,6 +126,10 @@ fbq('track', 'PageView');
   <li class="nav-item">
     <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../talleres/enut-2024.html"> 
+<span class="menu-text">Mini-talleres</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="https://lafarola.thinkific.com"> 
@@ -186,35 +200,34 @@ fbq('track', 'PageView');
 <p>Hace unas semanas, en Cusco, un profesor me contaba su plan: estaba ahorrando para comprarse una computadora grande, de esas con nombre de nave espacial, para correr sus modelos.</p>
 <p>Le dije que no la compre. Que esos modelos corren por centavos en una máquina alquilada en la nube, desde el navegador, sin instalar nada y sin hacerte de una máquina que será obsoleta en dos años.</p>
 <p>Se quedó pensando un momento y me preguntó: <em>“¿Y eso… lo enseñas?”</em></p>
-<p>La pregunta me persigue desde entonces, porque resume algo más grande: <strong>las herramientas de investigación cambiaron más rápido que la formación de los investigadores.</strong> Y la brecha ya no está solamente donde solía estar.</p>
+<p>La pregunta me persigue desde entonces, porque resume algo más grande: las herramientas de investigación cambiaron más rápido que la formación de quienes investigan. Y la brecha ya no está donde solía estar.</p>
 <section id="la-brecha-ha-cambiado" class="level2">
 <h2 class="anchored" data-anchor-id="la-brecha-ha-cambiado">La brecha ha cambiado</h2>
 <p>Durante años, La Farola enseñó una cosa con orgullo: a escribir el código que doma los microdatos públicos del Perú. Unir 10 años de la ENAHO, armonizar etiquetas que cambian sin aviso, reconstruir deflactores espaciales desde la metodología oficial. Plomería fina, de la que una tesis depende.</p>
-<p>Seamos directos sobre lo que pasó: <strong>hoy una IA escribe ese código en segundos.</strong> El <code>map()</code> que tomaba un taller entero de explicar, sale gratis de un chat.</p>
-<p>¿Eso mata el oficio? Al contrario. Lo sube de piso, te ahorras lo tedioso.</p>
-<p>La IA te va a escribir un <code>map()</code> perfecto… sobre un ubigeo que perdió el cero a la izquierda. O va a juntar 10 años de encuestas… sin notar que la variable cambió de definición en 2019. Peor aún, va a estimar tu modelo… con el deflactor equivocado, con una atrición que sesga todo, con un peso muestral que no corresponde. Y te lo va a entregar con total confianza, en una tabla hermosa y celebrando qué gran investigador resultaste.</p>
-<p>Ahora que el código se ha hecho tan fácil de conseguir es más obvio que nunca que no era la capacidad más importante en el desarrollo académico de nadie. Era simplemente una barrera difícil de superar en el camino. <strong>Lo verdaderamente valioso es (y siempre fue) el criterio de la investigadora</strong>: saber qué calcular y por qué; entender cuándo un cálculo está bien hecho y poder demostrarlo; explicar la relevancia de un cálculo en el desarrollo de un argumento y saber criticar sus debilidades. La estadística siempre fue eso; ahora ya no hay dónde esconderse - lo único que importa es la calidad del análisis y la pertinencia de los cálculos para ese análisis.</p>
+<p>Hoy una IA escribe ese código en segundos. El <code>map()</code> que tomaba un taller entero de explicar sale gratis de un chat.</p>
+<p>Eso le quita al oficio la parte tediosa, y deja a la vista la otra. La IA te va a escribir un <code>map()</code> perfecto sobre un ubigeo que perdió el cero a la izquierda. Va a juntar 10 años de encuestas sin notar que una variable cambió de definición en 2019. Va a estimar tu modelo con el deflactor equivocado, con una atrición que sesga todo, con un peso muestral que no corresponde. Y te lo va a entregar con total confianza y en una tabla hermosa.</p>
+<p>Ahora que el código es tan fácil de conseguir, queda claro que nunca fue la capacidad más importante: era una barrera difícil de pasar en el camino. Lo valioso es, y siempre fue, el criterio de quien investiga. Saber qué calcular y por qué. Saber cuándo un cálculo está bien hecho y poder demostrarlo. Saber qué aporta ese cálculo al argumento y dónde es débil. La estadística siempre fue eso; lo que cambia es que ya no hay que pasar primero por la barrera.</p>
 </section>
 <section id="qué-hacemos-al-respecto" class="level2">
 <h2 class="anchored" data-anchor-id="qué-hacemos-al-respecto">Qué hacemos al respecto</h2>
-<p>La Farola vuelve, rediseñada para este mundo:</p>
-<ul>
-<li><strong>Talleres donde el código no es requisito, el criterio sí.</strong> La teoría y la limpieza de datos llegan en video, para pausar y repetir. La sesión en vivo se reserva para lo que no puedes leer en un libro: diagnóstico, comparación, interpretación. Tú diriges; la máquina tipea.</li>
-<li><strong>Herramientas libres.</strong> Estamos empaquetando nuestros años de plomería ENAHO, ENDES e INEI en general en un paquete de R de código abierto. Pronto en este boletín.</li>
-<li><strong>Lecciones gratis en video.</strong> La primera milla del trabajo mecánico, regalada. En La Farola cobramos por enseñarte criterio, no simplemente comandos.</li>
-<li><strong>Este boletín, cada semana.</strong> Plomería de datos, IA bajo tu dirección, y de vez en cuando una herejía sobre cómo enseñamos economía.</li>
-</ul>
+<p>La Farola vuelve, rediseñada para este mundo.</p>
+<p>Talleres donde el código no es requisito y el criterio sí. La teoría y la limpieza de datos llegan en video, para pausar y repetir. La sesión en vivo se reserva para lo que no se aprende en un libro: diagnóstico, comparación, interpretación. Tú diriges y la máquina tipea.</p>
+<p>Herramientas libres. Estamos empaquetando nuestros años de plomería con la ENAHO, la ENDES y el INEI en general en un paquete de R de código abierto.</p>
+<p>Lecciones gratis en video, con la primera milla del trabajo mecánico. En La Farola cobramos por enseñar criterio, no comandos.</p>
+<p>Y este boletín, cada semana: plomería de datos, IA bajo tu dirección y, de vez en cuando, una herejía sobre cómo enseñamos economía.</p>
 </section>
 <section id="lo-primero-datos-de-panel-con-dos-países-a-la-vez" class="level2">
 <h2 class="anchored" data-anchor-id="lo-primero-datos-de-panel-con-dos-países-a-la-vez">Lo primero: datos de panel, con dos países a la vez</h2>
-<p>El <strong>miércoles 19 de agosto</strong> arranca nuestro taller de <strong>Modelos de Datos de Panel con R</strong>, y tiene algo que ningún curso de la región ofrece: cada método se aplica lado a lado a la <strong>ENAHO Panel (Perú)</strong> y a la <strong>ENOE (México)</strong>.</p>
-<p>¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: <em>¿ser informal hoy te condena a ser informal mañana?</em></p>
-<p>Seis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito - el criterio econométrico básico, sí.</p>
-<p><a href="https://lafarola.thinkific.com/courses/panel" class="btn-farola">Ver el programa completo →</a></p>
-<p>Early bird hasta el sábado 15 de agosto. Y si tienes dudas, escríbeme al <a href="https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel">WhatsApp</a> - las respondo yo, no un bot.</p>
+<p>El miércoles 19 de agosto arranca nuestro taller de Modelos de Datos de Panel con R. No conocemos otro curso en la región que aplique cada método lado a lado a la ENAHO Panel (Perú) y a la ENOE (México).</p>
+<p>¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: ¿ser informal hoy te condena a ser informal mañana?</p>
+<p>Seis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito. Hace falta el criterio econométrico básico.</p>
+<p><a href="https://lafarola.thinkific.com/courses/panel" class="btn-farola">Ver el programa completo</a></p>
+<p>Early bird hasta el sábado 15 de agosto. Si tienes dudas, escríbeme al <a href="https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel">WhatsApp</a>: las respondo yo.</p>
 <hr>
 <p>Ah, y al profesor de Cusco: sí, este año lo enseñamos.</p>
 <p><em>La mayoría usa la estadística como un borracho usa una farola: más para apoyarse que para iluminarse. Nosotros preferimos iluminar.</em></p>
+<hr>
+<p><strong>Actualización, 15 de septiembre de 2026.</strong> El taller de paneles se dictó entre el 19 de agosto y el 9 de septiembre: seis sesiones con catorce personas. Se está convirtiendo en separata (lecturas, código, datos y un video de repaso por lección) y se anunciará aquí cuando esté lista. El paquete de R y las lecciones gratis en video siguen en desarrollo, y el boletín no sostuvo la cadencia semanal durante el dictado a pesar de sí haberse actualizado. Lo que sí salió: seis resultados del taller en <a href="../../posts/2026-09-04-lo-que-encontramos/index.html">este post</a>, y una sesión gratuita en vivo con la ENUT 2024 el sábado 19 de septiembre, con <a href="https://lafarola.thinkific.com/products/live_events/enut-2024">inscripción aquí</a>.</p>
 
 
 </section>

@@ -2,12 +2,22 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/2026-09-05-catorce-anos-sin-enut/index.html",
+      "/posts/2026-09-04-lo-que-encontramos/index.html",
+      "/posts/2026-08-28-el-peso-no-es-opcional/index.html",
+      "/posts/2026-08-21-la-variable-cambio-de-nombre/index.html",
+      "/posts/2026-08-14-cinco-fotos-y-una-pelicula/index.html",
       "/posts/2026-08-el-codigo-se-copia-y-pega/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2026-09-05-catorce-anos-sin-enut/index.html",
+      "/posts/2026-09-04-lo-que-encontramos/index.html",
+      "/posts/2026-08-28-el-peso-no-es-opcional/index.html",
+      "/posts/2026-08-21-la-variable-cambio-de-nombre/index.html",
+      "/posts/2026-08-14-cinco-fotos-y-una-pelicula/index.html",
       "/posts/2026-08-el-codigo-se-copia-y-pega/index.html"
     ]
   }

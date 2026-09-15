@@ -9,8 +9,300 @@
 <link>https://lafarola.pe/blog.html</link>
 <atom:link href="https://lafarola.pe/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Plomería de datos peruanos, IA bajo tu dirección, y de vez en cuando una herejía sobre cómo enseñamos economía.</description>
-<generator>quarto-1.9.38</generator>
-<lastBuildDate>Fri, 07 Aug 2026 05:00:00 GMT</lastBuildDate>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Sat, 05 Sep 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Catorce años sin encuesta de uso del tiempo. Ya hay una.</title>
+  <dc:creator>Gonzalo Urbina</dc:creator>
+  <link>https://lafarola.pe/posts/2026-09-05-catorce-anos-sin-enut/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>El número más citado sobre trabajo doméstico en el Perú tiene dieciséis años. La cuenta satélite del trabajo doméstico no remunerado (INEI y MIMP, 2016) lo valorizó en <strong>20,4 % del PIB</strong>. El dato es de 2010. No existe una actualización oficial con la encuesta nueva; lo verificamos en agosto de 2026.</p>
+<p>Entre la ENUT 2010 y la ENUT 2024 pasaron catorce años. La ley 29700, de 2011, ordenó esa cuenta satélite y una encuesta de uso del tiempo cada cinco años. En el medio hubo un módulo dentro de la encuesta de empleo de 2022 que, hasta donde encontramos, nadie ha explotado en público.</p>
+<section id="qué-cambió" class="level2">
+<h2 class="anchored" data-anchor-id="qué-cambió">Qué cambió</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>ENUT 2010</th>
+<th>ENUT 2024</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Método</td>
+<td>Lista de actividades, recordatorio de la semana</td>
+<td>Diario precodificado en intervalos de 10 minutos</td>
+</tr>
+<tr class="even">
+<td>Días de referencia</td>
+<td>Semana partida en lunes a viernes y sábado a domingo</td>
+<td>Tres días: uno de semana, sábado y domingo</td>
+</tr>
+<tr class="odd">
+<td>Simultaneidad</td>
+<td>No</td>
+<td>Hasta tres actividades a la vez</td>
+</tr>
+<tr class="even">
+<td>Viviendas</td>
+<td>4.580 según la ficha técnica</td>
+<td>6.056, en 757 conglomerados</td>
+</tr>
+<tr class="odd">
+<td>Edad</td>
+<td>12 y más</td>
+<td>12 y más</td>
+</tr>
+<tr class="even">
+<td>Códigos de actividad</td>
+<td>128 ítems de lista</td>
+<td>120 códigos</td>
+</tr>
+</tbody>
+</table>
+<p>El archivo del diario de 2024 tiene 1.925.501 filas: una por persona y por intervalo de diez minutos. Con ese cambio de instrumento, la de 2024 es otra encuesta más que una segunda edición.</p>
+</section>
+<section id="por-qué-no-se-pueden-comparar-directo" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-no-se-pueden-comparar-directo">Por qué no se pueden comparar directo</h2>
+<p>Una lista de actividades con recordatorio semanal y un diario de diez minutos miden cosas distintas, y las listas tienden a sobreestimar horas (Beltrán y Lavado corrigen ese sobre reporte en la ENUT 2010 en su trabajo de 2014). El primer uso académico de la ENUT 2024 que identificamos (Beltrán, Lavado y coautores, nota del CIUP, 2025) lo advierte: la comparación directa 2010-2024 no es válida sin un ejercicio de sensibilidad. Ese ejercicio, hasta donde encontramos, no existe publicado.</p>
+<p>La literatura arbitrada con la encuesta nueva está casi vacía. Para quien busca un tema de tesis o un paper con datos frescos, es una de las pocas encuestas del INEI con la literatura todavía por escribir.</p>
+</section>
+<section id="la-primera-trampa-antes-de-cualquier-cuadro" class="level2">
+<h2 class="anchored" data-anchor-id="la-primera-trampa-antes-de-cualquier-cuadro">La primera trampa, antes de cualquier cuadro</h2>
+<p>El identificador <code>ID</code> de los archivos de 2024 identifica la <strong>vivienda</strong>, no el hogar. Hay 55 viviendas con más de un hogar. La llave de hogar es <code>ID + HOGAR</code>; con <code>ID</code> solo, el primer merge duplica personas. No está en el diccionario, y a nosotros nos costó una tarde.</p>
+</section>
+<section id="lo-que-haremos-con-ella" class="level2">
+<h2 class="anchored" data-anchor-id="lo-que-haremos-con-ella">Lo que haremos con ella</h2>
+<p>El <strong>sábado 19 de septiembre</strong>, de 9 a 11 de la mañana, una sola sesión en vivo: cargar la ENUT 2024 con las llaves y los factores correctos, reproducir al minuto un indicador del informe oficial, construir dos cuadros propios, y salir con un outline de cómo se replican con la encuesta nueva tres trabajos hechos con la de 2010: la cuenta satélite, la pobreza de tiempo y la demanda de trabajo del hogar remunerado.</p>
+<p>Es gratis, con inscripción previa, y hay 100 cupos. Script y datos preparados incluidos.</p>
+<p><a href="https://lafarola.thinkific.com/products/live_events/enut-2024" class="btn-farola">Inscríbete gratis</a> El programa completo está en <a href="../../talleres/enut-2024.html">la página del mini</a>.</p>
+<p><em>Fuentes: INEI, ENUT 2010 principales resultados (2011); INEI y MIMP, Cuenta Satélite del Trabajo Doméstico No Remunerado (2016); INEI, ENUT 2024 principales resultados (2025); Beltrán y Lavado, “El impacto del uso del tiempo de las mujeres en el Perú”, Documento de Discusión DD1409, CIUP (2014; versión publicada en Latin American Research Review, 2021); Beltrán, Lavado, Koechlin y Núñez, “Perú sin tiempo”, CIUP (2025); microdatos de la ENUT 2024, portal de microdatos del INEI. Conteos de archivos verificados sobre los microdatos en agosto de 2026.</em></p>
+
+
+</section>
+
+ ]]></description>
+  <category>Plomería de datos</category>
+  <category>ENUT</category>
+  <category>anuncios</category>
+  <guid>https://lafarola.pe/posts/2026-09-05-catorce-anos-sin-enut/</guid>
+  <pubDate>Sat, 05 Sep 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Lo que encontramos siguiendo a las mismas personas</title>
+  <dc:creator>Gonzalo Urbina</dc:creator>
+  <link>https://lafarola.pe/posts/2026-09-04-lo-que-encontramos/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Esto es lo que corrimos y discutimos en cuatro semanas de taller con microdatos públicos que cualquiera puede descargar: la ENAHO panel 2021-2025 del INEI y la ENOE del INEGI. Seis resultados, cada uno con su método al pie y con lo que dice la literatura publicada sobre el mismo problema, porque ninguno de los seis parte de cero.</p>
+<section id="la-puerta-giratoria-de-la-pobreza" class="level2">
+<h2 class="anchored" data-anchor-id="la-puerta-giratoria-de-la-pobreza">1. La puerta giratoria de la pobreza</h2>
+<p>La foto anual dice cuántos pobres hay. La película dice quiénes. Siguiendo a las mismas personas de 2024 a 2025 en la ENAHO panel: de quienes eran pobres en 2024, el 43,9 % había salido de la pobreza un año después. De quienes no lo eran, el 13,2 % cayó. Una tasa de pobreza que se mueve poco de un año a otro puede esconder mucho movimiento de personas, y ese movimiento solo se ve siguiéndolas.</p>
+<p>En México la película es trimestral: el 14,2 % de las personas cambia de situación de empleo principal (formal, informal, fuera de la ocupación) entre un trimestre y el siguiente.</p>
+<p><em>Método: transiciones 2024 a 2025 con el factor longitudinal (facpanel) sobre personas presentes en ambas olas; ENOE 2025T1-2026T1 emparejada por vivienda y persona a lo largo de cinco olas.</em></p>
+</section>
+<section id="el-salario-mínimo-mexicano-muerde-donde-se-cumple" class="level2">
+<h2 class="anchored" data-anchor-id="el-salario-mínimo-mexicano-muerde-donde-se-cumple">2. El salario mínimo mexicano muerde donde se cumple</h2>
+<p>En 2019 el salario mínimo se duplicó en la frontera norte de México. Con la ENOE, celdas ponderadas y una doble resta: el salario promedio no cambia (−0,0001 en log), el percentil 25 sube 5,5 puntos log más que en el resto del país, y la banda de trabajadores directamente obligados por el nuevo mínimo se vacía 6,2 puntos más que en el control. El efecto está en la cola baja y el promedio no lo muestra. Alvarado, Orraca y Cabrera-Hernández (2023), con la misma encuesta y regresiones de cuantil incondicional, lo encuentran en el mismo lugar: los cuantiles 25 y 50 de los formales y el 25 de los informales.</p>
+<p>Dos cautelas. El programa incluyó rebajas de IVA e ISR, así que lo estimado es el paquete completo, no el mínimo solo; ningún trabajo publicado ha logrado separarlos. Y nuestro ejercicio no calcula errores estándar: son diferencias de celdas, y con pocos municipios tratados la inferencia honesta es por permutación, que quedó pendiente. Sin factores de expansión, el sobremuestreo del INEGI en la frontera añade un punto porcentual al promedio; <a href="../../posts/2026-08-28-el-peso-no-es-opcional/index.html">el post anterior</a> lo cuenta.</p>
+<p><em>Método: ENOE 2018-2019, 31 de los 43 municipios del decreto con muestra; diferencias de percentiles y de proporciones por celda, con los factores de expansión oficiales; sin regresión.</em></p>
+</section>
+<section id="el-mínimo-peruano-de-2022-visto-desde-el-panel" class="level2">
+<h2 class="anchored" data-anchor-id="el-mínimo-peruano-de-2022-visto-desde-el-panel">3. El mínimo peruano de 2022, visto desde el panel</h2>
+<p>Con la ENAHO panel: bandas salariales definidas sobre el ingreso de 2021 y resultado en 2023, saltando el año del cambio (mayo de 2022). La moda del salario formal migra de 930 a 1.025 soles, que es la firma del decreto en los datos. La banda obligada de los formales crece 8,4 puntos log por encima de lo que predice la curva de reversión a la media, con un tope mecánico de 9,7 (lo que va de 930 a 1.025).</p>
+<p>Ese 8,4 sale de 83 asalariados formales en la banda, sin error estándar, y se mueve con la pesada: la brecha contra la banda vecina, descontado el placebo, va de 0,15 a 0,27 según el peso, y sobre el subpanel balanceado, con 20 tratados, desaparece. Se reporta como orden de magnitud compatible con el empuje de la norma, no como efecto puntual.</p>
+<p>Lo que dice la literatura: los cuatro trabajos peruanos con este diseño de bandas (Jaramillo y López 2006, Del Valle 2009, Jaramillo 2012, Céspedes y Sánchez 2013) usan la Encuesta Permanente de Empleo de Lima. Que sepamos, esta es la primera pasada con la ENAHO panel nacional; gana cobertura y atrición medida, y paga con celdas chicas.</p>
+<p>Un año después del alza, el 20,5 % de los asalariados formales de la muestra declaraba un ingreso mensual por debajo de 1.025 soles (34 % si se cuenta a los informales); en 2021, antes del alza, eran 29,5 % y 43,6 %. Parte es incumplimiento y parte es que el ingreso de la ENAHO es anual y se divide entre doce, con lo que los meses sin trabajo bajan el promedio.</p>
+<p><em>Método: ENAHO panel 2021-2025, bandas 2021 y resultado 2023, control por reversión a la media (curva ajustada fuera de la zona del mínimo), pesos propios por probabilidad inversa porque los factores oficiales no se combinan entre pares de años; proporciones bajo el mínimo con ingreso nominal y sin pesos.</em></p>
+</section>
+<section id="el-ingreso-no-se-pega-tanto-como-parece" class="level2">
+<h2 class="anchored" data-anchor-id="el-ingreso-no-se-pega-tanto-como-parece">4. El ingreso no se pega tanto como parece</h2>
+<p>La persistencia del ingreso laboral parece alta: alrededor de 0,6 de un período al siguiente en la regresión agrupada. Con Arellano-Bond (dos etapas, corrección de Windmeijer, instrumentos colapsados) el arrastre período a período baja a 0,04 en la ENAHO y 0,03 en la ENOE, con diagnósticos que no rechazan: AR(2) con p de 0,96 y 0,94, Sargan con p de 0,23 y 0,25, seis instrumentos.</p>
+<p>Hay dos lecturas y las dos son compatibles con el número. Una: casi toda la persistencia era heterogeneidad, cada quien es quien es. Otra: el ingreso declarado tiene error de medida, y Antman y McKenzie (2005) muestran, con la encuesta antecesora de la ENOE, que ese error empuja el estimador hacia cero; en su caso los datos individuales dan 0,02 y el pseudo-panel 0,73. Con lo que corrimos no se puede separar una lectura de la otra, y así se reporta.</p>
+<p>El detalle técnico: el estimador de efectos fijos reporta la persistencia con signo negativo, −0,34 en la ENAHO. Es el sesgo de Nickell (1981), cuya fórmula reproduce el número, y en el taller lo simulamos para ver de dónde sale.</p>
+<p><em>Método: ENAHO panel 2021-2025 (anual) y ENOE (trimestral); Arellano-Bond en dos etapas con corrección de Windmeijer, instrumentos colapsados; tests AR(2) y de Sargan reportados con su p.</em></p>
+</section>
+<section id="el-gasto-sí-se-suaviza-y-el-tablero-que-lo-vigila" class="level2">
+<h2 class="anchored" data-anchor-id="el-gasto-sí-se-suaviza-y-el-tablero-que-lo-vigila">5. El gasto sí se suaviza, y el tablero que lo vigila</h2>
+<p>Persistencia del gasto del hogar 0,18, del ingreso del hogar 0,12, del ingreso individual 0,04: el orden que predice la teoría del ingreso permanente. Pero el test de Sargan rechaza en las dos ecuaciones del hogar (p = 0,000 en gasto y en ingreso), así que esos dos puntos no están validados por su propio diagnóstico. Lo que se puede reportar es el orden, con la advertencia escrita; el punto, no.</p>
+<p><em>Método: los mismos estimadores de (4) sobre gasto e ingreso per cápita del hogar; Sargan rechaza en ambas ecuaciones del hogar y se dice.</em></p>
+</section>
+<section id="la-autopsia-cómo-un-control-de-más-voltea-un-signo" class="level2">
+<h2 class="anchored" data-anchor-id="la-autopsia-cómo-un-control-de-más-voltea-un-signo">6. La autopsia: cómo un control de más voltea un signo</h2>
+<p>Replicamos una tesis sobre el Bono Familiar Universal con la ENAHO panel 2017-2021. Su coeficiente se reproduce en signo, tamaño y no significancia (−0,0032 contra −0,0025 en la tesis; ninguno distinto de cero). Luego agregamos un control mal elegido, el gasto del hogar, que es ingrediente de la variable dependiente: el signo cambia y el R² within pasa de 0 a 0,35. Un R² que sube de golpe al agregar una variable puede ser el síntoma de un control que no debía entrar.</p>
+<p>No nombramos a la autora: el error es de manual y el ejemplo sirve igual sin nombre.</p>
+<p><em>Método: ENAHO panel 2017-2021, efectos fijos dos por dos con errores agrupados por hogar; la especificación de la tesis y la misma con el control de más.</em></p>
+<hr>
+<p>Cuatro semanas, dos encuestas, seis resultados con sus cautelas escritas.</p>
+<p>Lo próximo es una encuesta nueva: <strong>ENUT 2024 en 2 horas</strong>, una sesión gratuita en vivo el sábado 19 de septiembre a las 9 de la mañana, con script y datos preparados. <a href="https://lafarola.thinkific.com/products/live_events/enut-2024" class="btn-farola">Inscríbete gratis</a> El programa completo está en <a href="../../talleres/enut-2024.html">la página del mini</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Métodos</category>
+  <category>paneles</category>
+  <category>taller</category>
+  <guid>https://lafarola.pe/posts/2026-09-04-lo-que-encontramos/</guid>
+  <pubDate>Fri, 04 Sep 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>El peso no es opcional</title>
+  <dc:creator>Gonzalo Urbina</dc:creator>
+  <link>https://lafarola.pe/posts/2026-08-28-el-peso-no-es-opcional/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>En 2019 México duplicó el salario mínimo en 43 municipios de la frontera norte, junto con rebajas de IVA e ISR. Fue el caso de la sesión de diferencias en diferencias del taller de paneles, con la ENOE de 2018 y 2019, y hay al menos tres trabajos publicados con el mismo diseño (Campos-Vázquez, Delgado y Rodas 2020; Alvarado, Orraca y Cabrera-Hernández 2023; Cabrera-Hernández y Duval-Hernández 2026).</p>
+<p>Al armar las celdas apareció algo que ninguno de los tres discute.</p>
+<section id="el-inegi-sobremuestreó-la-frontera" class="level2">
+<h2 class="anchored" data-anchor-id="el-inegi-sobremuestreó-la-frontera">El INEGI sobremuestreó la frontera</h2>
+<p>Comparando el tamaño de muestra de 2019 contra 2018 en nuestros datos: la muestra de Mexicali se multiplicó por 2,1, la de Ciudad Juárez por 2,8 y la de Reynosa por 5,3. Baja California, Chihuahua y Tamaulipas crecieron entre 1,3 y 1,5 veces. El resto del país, 1,01. La explicación probable es una ampliación de muestra para evaluar el programa; la documentación oficial de esa ampliación no la hemos encontrado todavía, y lo decimos como pendiente.</p>
+<p>La consecuencia, en cambio, se mide.</p>
+</section>
+<section id="un-punto-entero-fabricado" class="level2">
+<h2 class="anchored" data-anchor-id="un-punto-entero-fabricado">Un punto entero fabricado</h2>
+<p>Un DiD dos por dos sobre el log del salario, calculado como cuatro promedios de celda sin pesos, da +0,0100. Los mismos cuatro promedios con los factores de expansión dan −0,0001. Un punto porcentual de “efecto” producido por la composición de la muestra: en 2019 la frontera tiene muchos más observados, y los observados nuevos no se parecen a los viejos.</p>
+<p>Este ejercicio es una doble resta de celdas y no calcula errores estándar. Lo que muestra es cuánto cambia el número al pesar, no si alguno de los dos es distinto de cero; la inferencia con pocos municipios tratados es otro capítulo.</p>
+<p>La media cercana a cero abre la pregunta siguiente: si el promedio no se mueve, ¿para quién se mueve? Lo que encontramos en los percentiles está en <a href="../../posts/2026-09-04-lo-que-encontramos/index.html">el post de resultados del taller</a>.</p>
+</section>
+<section id="la-regla" class="level2">
+<h2 class="anchored" data-anchor-id="la-regla">La regla</h2>
+<p>Los factores de expansión entran en el estimador, en cada celda; si no, el estimador describe la muestra. De los tres trabajos publicados sobre esta reforma, ninguno pondera con <code>fac</code> dentro de la regresión: Campos-Vázquez y coautores ponderan por población municipal, Alvarado y coautores no ponderan, y Cabrera-Hernández y Duval-Hernández dicen “survey weights” sin decir cuál.</p>
+<p>En un panel de personas, además, el peso cambia de naturaleza. En la ENAHO panel es <code>facpanel</code>, el longitudinal, y no el transversal de cada año; los factores transversales de dos años distintos no se combinan. Cuando el INEI no publica un peso para el par de años que necesitas, se construye, se declara y va al pie de la tabla.</p>
+<p>Cobertura, para quien quiera replicar: de los 43 municipios del decreto, 31 tienen muestra en la ENOE. Los 12 restantes son rurales y chicos.</p>
+<p><em>Método: ENOE 2018-2019 (INEGI), tablas SDEM; municipios del decreto del 31 de diciembre de 2018; DiD dos por dos con y sin <code>fac</code>, como diferencia de promedios de celda.</em></p>
+<p>La plantilla de celdas con pesos sirve para cualquier experimento natural con la ENOE o la ENAHO; <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20la%20plantilla%20de%20celdas%20DiD">escríbeme por WhatsApp</a> y te la paso.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Métodos</category>
+  <category>ENOE</category>
+  <category>diferencias en diferencias</category>
+  <guid>https://lafarola.pe/posts/2026-08-28-el-peso-no-es-opcional/</guid>
+  <pubDate>Fri, 28 Aug 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>La variable cambió de nombre a mitad de tu ventana</title>
+  <dc:creator>Gonzalo Urbina</dc:creator>
+  <link>https://lafarola.pe/posts/2026-08-21-la-variable-cambio-de-nombre/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Al apilar los cinco trimestres de la ENOE para el taller apareció algo que no estaba en la documentación: entre 2025T2 y 2025T3 el INEGI renombró las variables de geografía. <code>ent</code> pasó a ser <code>cve_ent</code>, <code>mun</code> a <code>cve_mun</code>, <code>loc</code> a <code>cve_loc</code>, <code>ageb</code> a <code>cve_ageb</code>, y apareció una clave nueva, <code>cvegeo</code>. El archivo pasó de 114 a 115 columnas. Todo esto dentro de los quince meses de nuestra propia ventana.</p>
+<p>Un <code>bind_rows()</code> no falla: crea las dos versiones de cada columna, cada una con la mitad de los valores vacíos, y el modelo corre igual.</p>
+<section id="y-los-tipos-también-se-movieron" class="level2">
+<h2 class="anchored" data-anchor-id="y-los-tipos-también-se-movieron">Y los tipos también se movieron</h2>
+<p>Segunda sorpresa: la clave de entidad llega numérica en 2025 y como texto en 2026. Un “1” contra un “01”. Un emparejamiento por llave numérica contra una de texto tampoco falla: simplemente no encuentra pares. Es el mismo problema del ubigeo peruano que pierde el cero a la izquierda cuando alguien lo guarda como número.</p>
+<p>La regla que salió de esa tarde: las llaves son siempre texto normalizado, con ceros a la izquierda y el mismo ancho en todas las olas, antes de cualquier emparejamiento.</p>
+</section>
+<section id="el-peso-también-cambió-de-nombre" class="level2">
+<h2 class="anchored" data-anchor-id="el-peso-también-cambió-de-nombre">El peso también cambió de nombre</h2>
+<p>El factor <code>fac</code> de las ediciones viejas de la ENOE ya no existe. Ahora se llama <code>fac_tri</code>, y hay un <code>fac_men</code> mensual. Si un script viejo lo llama como <code>datos$fac</code> dentro de <code>weights =</code>, R no protesta: <code>$</code> devuelve NULL y la regresión corre sin pesos. Dentro de una tubería de <code>dplyr</code> la columna inexistente sí detiene el script, que es el mejor de los dos casos.</p>
+<p>Lo mismo pasa con la ENDES, que renumera sus tablas entre ediciones, y con la ENAHO, que cambia nombres de variables entre años. Es lo normal en los microdatos públicos.</p>
+</section>
+<section id="qué-hacer-en-orden" class="level2">
+<h2 class="anchored" data-anchor-id="qué-hacer-en-orden">Qué hacer, en orden</h2>
+<ol type="1">
+<li>Diagnóstico de esquema antes de apilar: una tabla con nombres y tipos de cada variable por archivo. Toma cinco minutos y evita el modelo con la mitad de los datos.</li>
+<li>Armonizar a un estándar y decir cuál. Nosotros elegimos el nuevo del INEGI (<code>cve_*</code>), porque es hacia donde van los archivos futuros.</li>
+<li>Llaves como texto, siempre, con ancho fijo.</li>
+<li>El crosswalk se guarda como dato, no como código.</li>
+</ol>
+<p>Sobre el último punto vale la pena detenerse. Una tabla que dice “en 2025T2 esta variable se llamaba así” es un archivo que se lee, se revisa y sobrevive al siguiente cambio de nombre; un <code>rename()</code> enterrado en un script se olvida, y el siguiente trimestre lo rompe otra vez.</p>
+<p><em>Método: tablas SDEM de la ENOE 2025T1-2026T1 (INEGI), comparación de esquema por archivo antes del apilado.</em></p>
+<p>Si quieres el script de diagnóstico de esquema para tus propios archivos, <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20diagn%C3%B3stico%20de%20esquema">escríbeme por WhatsApp</a> y te lo mando.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Plomería de datos</category>
+  <category>ENOE</category>
+  <category>ENAHO</category>
+  <guid>https://lafarola.pe/posts/2026-08-21-la-variable-cambio-de-nombre/</guid>
+  <pubDate>Fri, 21 Aug 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Cinco fotos sueltas y una película armada</title>
+  <dc:creator>Gonzalo Urbina</dc:creator>
+  <link>https://lafarola.pe/posts/2026-08-14-cinco-fotos-y-una-pelicula/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Primera semana del taller de paneles y todavía no estimamos nada. Antes hay que armar los dos paneles: la ENAHO panel 2021-2025 del INEI y la ENOE del INEGI. Misma tarea, dos institutos, dos formas de entregar los datos. La diferencia es una buena primera lección sobre qué es un panel.</p>
+<section id="el-inei-te-entrega-la-película-armada" class="level2">
+<h2 class="anchored" data-anchor-id="el-inei-te-entrega-la-película-armada">El INEI te entrega la película armada</h2>
+<p>La edición panel de la ENAHO llega ancha y ya emparejada. Cada variable trae un sufijo de año, de <code>_21</code> a <code>_25</code>, y las llaves de hogar y de persona (<code>numpanh</code>, <code>numper</code>) vienen resueltas. El archivo sumaria tiene 868 columnas; el módulo de empleo, 7.296. Nadie tiene que emparejar olas a mano: la preparación es un pivot de ancho a largo.</p>
+<p>Dos cosas que conviene saber antes de empezar. El archivo trae la ENAHO anual completa, no solo la muestra panel: los hogares que se siguen de un año a otro se marcan con <code>tipenc</code> y son entre 11.780 y 12.315 por año, unas 36 a 38 mil personas. Y el panel no trae las variables derivadas: ocupación e informalidad se construyen desde las preguntas del módulo de empleo. El peso que corresponde es <code>facpanel</code>, el factor longitudinal, y no el factor transversal de cada año.</p>
+</section>
+<section id="el-inegi-te-entrega-cinco-fotos-sueltas" class="level2">
+<h2 class="anchored" data-anchor-id="el-inegi-te-entrega-cinco-fotos-sueltas">El INEGI te entrega cinco fotos sueltas</h2>
+<p>La ENOE llega como un archivo por trimestre. Para nuestra ventana, cinco: de 2025T1 a 2026T1. Emparejar a las personas de una foto a la siguiente es trabajo del usuario, con las llaves de vivienda, hogar y número de renglón, y con una validación: sexo y edad tienen que coincidir de una ola a otra. La razón es que el número de renglón nombra una posición en el roster del hogar, no a una persona. Si alguien se va y otro entra, la posición puede reasignarse, y un emparejamiento sin validación produce pares falsos que el código acepta.</p>
+<p>Los números de la cohorte que entró en 2025T1:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Cohorte 2025T1</th>
+<th>Cifra</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Viviendas</td>
+<td>25.521</td>
+</tr>
+<tr class="even">
+<td>Retención por ola</td>
+<td>100, 88, 85, 82 y 81,6 %</td>
+</tr>
+<tr class="odd">
+<td>Personas con las cinco olas</td>
+<td>57.588</td>
+</tr>
+</tbody>
+</table>
+<p>Sobre la validación, lo que vimos en clase fue menos dramático que la advertencia. Con la llave completa, el par 2025T1 a 2025T2 da 73.516 pares y ninguna falla de sexo o edad: a un trimestre de distancia, los filtros del INEGI hacen su trabajo. El riesgo está en el otro lado. Exigir la edad exacta, en vez de admitir un año de diferencia, bota el 23 % de los pares por ruido de declaración, sin ganar nada a cambio. La regla de validación se elige mirando el estimador que viene después, y se declara.</p>
+</section>
+<section id="el-contraste-que-se-vuelve-lección" class="level2">
+<h2 class="anchored" data-anchor-id="el-contraste-que-se-vuelve-lección">El contraste que se vuelve lección</h2>
+<p>La ENAHO balanceada a cinco años tiene 4.820 personas. La ENOE tiene 57.588 con cinco trimestres. Un panel largo y chico contra uno corto y enorme. Ningún diseño es mejor en abstracto: cada método rinde distinto según cuál de los dos tienes en frente, y por eso el taller corre cada modelo sobre ambos.</p>
+<p>En la sección de datos de un paper con cualquiera de los dos van, como mínimo: la ventana y por qué termina donde termina; cómo rota la muestra y qué traslape promete el diseño; con qué llave se emparejó y cuántos pares rechazó la validación; un cuadro con cuántas unidades había al inicio, cuántas quedan y cada exclusión intermedia; y qué factor entra en cada cálculo. De los once trabajos aplicados que leímos para el taller, nueve no mencionan la atrición y ninguno mete los pesos de la encuesta en la regresión.</p>
+<p><em>Método: ENAHO panel 2021-2025 (INEI), módulos sumaria, empleo, miembros y educación; ENOE 2025T1-2026T1 (INEGI), tablas SDEM, emparejamiento por vivienda, hogar y renglón con validación de sexo y edad.</em></p>
+<p>El script de emparejamiento con la validación está disponible para quien trabaje con cualquiera de los dos paneles: <a href="https://wa.me/51971333867?text=Hola%20Gonzalo%2C%20vengo%20del%20blog%20y%20quiero%20el%20script%20de%20emparejamiento">pídemelo por WhatsApp</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Plomería de datos</category>
+  <category>paneles</category>
+  <category>ENAHO</category>
+  <category>ENOE</category>
+  <guid>https://lafarola.pe/posts/2026-08-14-cinco-fotos-y-una-pelicula/</guid>
+  <pubDate>Fri, 14 Aug 2026 05:00:00 GMT</pubDate>
+</item>
 <item>
   <title>El código se copia y pega. El criterio, no.</title>
   <dc:creator>Gonzalo Urbina</dc:creator>
@@ -23,35 +315,34 @@
 <p>Hace unas semanas, en Cusco, un profesor me contaba su plan: estaba ahorrando para comprarse una computadora grande, de esas con nombre de nave espacial, para correr sus modelos.</p>
 <p>Le dije que no la compre. Que esos modelos corren por centavos en una máquina alquilada en la nube, desde el navegador, sin instalar nada y sin hacerte de una máquina que será obsoleta en dos años.</p>
 <p>Se quedó pensando un momento y me preguntó: <em>“¿Y eso… lo enseñas?”</em></p>
-<p>La pregunta me persigue desde entonces, porque resume algo más grande: <strong>las herramientas de investigación cambiaron más rápido que la formación de los investigadores.</strong> Y la brecha ya no está solamente donde solía estar.</p>
+<p>La pregunta me persigue desde entonces, porque resume algo más grande: las herramientas de investigación cambiaron más rápido que la formación de quienes investigan. Y la brecha ya no está donde solía estar.</p>
 <section id="la-brecha-ha-cambiado" class="level2">
 <h2 class="anchored" data-anchor-id="la-brecha-ha-cambiado">La brecha ha cambiado</h2>
 <p>Durante años, La Farola enseñó una cosa con orgullo: a escribir el código que doma los microdatos públicos del Perú. Unir 10 años de la ENAHO, armonizar etiquetas que cambian sin aviso, reconstruir deflactores espaciales desde la metodología oficial. Plomería fina, de la que una tesis depende.</p>
-<p>Seamos directos sobre lo que pasó: <strong>hoy una IA escribe ese código en segundos.</strong> El <code>map()</code> que tomaba un taller entero de explicar, sale gratis de un chat.</p>
-<p>¿Eso mata el oficio? Al contrario. Lo sube de piso, te ahorras lo tedioso.</p>
-<p>La IA te va a escribir un <code>map()</code> perfecto… sobre un ubigeo que perdió el cero a la izquierda. O va a juntar 10 años de encuestas… sin notar que la variable cambió de definición en 2019. Peor aún, va a estimar tu modelo… con el deflactor equivocado, con una atrición que sesga todo, con un peso muestral que no corresponde. Y te lo va a entregar con total confianza, en una tabla hermosa y celebrando qué gran investigador resultaste.</p>
-<p>Ahora que el código se ha hecho tan fácil de conseguir es más obvio que nunca que no era la capacidad más importante en el desarrollo académico de nadie. Era simplemente una barrera difícil de superar en el camino. <strong>Lo verdaderamente valioso es (y siempre fue) el criterio de la investigadora</strong>: saber qué calcular y por qué; entender cuándo un cálculo está bien hecho y poder demostrarlo; explicar la relevancia de un cálculo en el desarrollo de un argumento y saber criticar sus debilidades. La estadística siempre fue eso; ahora ya no hay dónde esconderse - lo único que importa es la calidad del análisis y la pertinencia de los cálculos para ese análisis.</p>
+<p>Hoy una IA escribe ese código en segundos. El <code>map()</code> que tomaba un taller entero de explicar sale gratis de un chat.</p>
+<p>Eso le quita al oficio la parte tediosa, y deja a la vista la otra. La IA te va a escribir un <code>map()</code> perfecto sobre un ubigeo que perdió el cero a la izquierda. Va a juntar 10 años de encuestas sin notar que una variable cambió de definición en 2019. Va a estimar tu modelo con el deflactor equivocado, con una atrición que sesga todo, con un peso muestral que no corresponde. Y te lo va a entregar con total confianza y en una tabla hermosa.</p>
+<p>Ahora que el código es tan fácil de conseguir, queda claro que nunca fue la capacidad más importante: era una barrera difícil de pasar en el camino. Lo valioso es, y siempre fue, el criterio de quien investiga. Saber qué calcular y por qué. Saber cuándo un cálculo está bien hecho y poder demostrarlo. Saber qué aporta ese cálculo al argumento y dónde es débil. La estadística siempre fue eso; lo que cambia es que ya no hay que pasar primero por la barrera.</p>
 </section>
 <section id="qué-hacemos-al-respecto" class="level2">
 <h2 class="anchored" data-anchor-id="qué-hacemos-al-respecto">Qué hacemos al respecto</h2>
-<p>La Farola vuelve, rediseñada para este mundo:</p>
-<ul>
-<li><strong>Talleres donde el código no es requisito, el criterio sí.</strong> La teoría y la limpieza de datos llegan en video, para pausar y repetir. La sesión en vivo se reserva para lo que no puedes leer en un libro: diagnóstico, comparación, interpretación. Tú diriges; la máquina tipea.</li>
-<li><strong>Herramientas libres.</strong> Estamos empaquetando nuestros años de plomería ENAHO, ENDES e INEI en general en un paquete de R de código abierto. Pronto en este boletín.</li>
-<li><strong>Lecciones gratis en video.</strong> La primera milla del trabajo mecánico, regalada. En La Farola cobramos por enseñarte criterio, no simplemente comandos.</li>
-<li><strong>Este boletín, cada semana.</strong> Plomería de datos, IA bajo tu dirección, y de vez en cuando una herejía sobre cómo enseñamos economía.</li>
-</ul>
+<p>La Farola vuelve, rediseñada para este mundo.</p>
+<p>Talleres donde el código no es requisito y el criterio sí. La teoría y la limpieza de datos llegan en video, para pausar y repetir. La sesión en vivo se reserva para lo que no se aprende en un libro: diagnóstico, comparación, interpretación. Tú diriges y la máquina tipea.</p>
+<p>Herramientas libres. Estamos empaquetando nuestros años de plomería con la ENAHO, la ENDES y el INEI en general en un paquete de R de código abierto.</p>
+<p>Lecciones gratis en video, con la primera milla del trabajo mecánico. En La Farola cobramos por enseñar criterio, no comandos.</p>
+<p>Y este boletín, cada semana: plomería de datos, IA bajo tu dirección y, de vez en cuando, una herejía sobre cómo enseñamos economía.</p>
 </section>
 <section id="lo-primero-datos-de-panel-con-dos-países-a-la-vez" class="level2">
 <h2 class="anchored" data-anchor-id="lo-primero-datos-de-panel-con-dos-países-a-la-vez">Lo primero: datos de panel, con dos países a la vez</h2>
-<p>El <strong>miércoles 19 de agosto</strong> arranca nuestro taller de <strong>Modelos de Datos de Panel con R</strong>, y tiene algo que ningún curso de la región ofrece: cada método se aplica lado a lado a la <strong>ENAHO Panel (Perú)</strong> y a la <strong>ENOE (México)</strong>.</p>
-<p>¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: <em>¿ser informal hoy te condena a ser informal mañana?</em></p>
-<p>Seis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito - el criterio econométrico básico, sí.</p>
-<p><a href="https://lafarola.thinkific.com/courses/panel" class="btn-farola">Ver el programa completo →</a></p>
-<p>Early bird hasta el sábado 15 de agosto. Y si tienes dudas, escríbeme al <a href="https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel">WhatsApp</a> - las respondo yo, no un bot.</p>
+<p>El miércoles 19 de agosto arranca nuestro taller de Modelos de Datos de Panel con R. No conocemos otro curso en la región que aplique cada método lado a lado a la ENAHO Panel (Perú) y a la ENOE (México).</p>
+<p>¿Por qué dos países? Porque cuando ves el mismo modelo enfrentarse a dos encuestas distintas, por fin distingues qué es del método y qué es de tus datos. Efectos fijos, diferencias en diferencias, Arellano-Bond, y la pregunta que Perú y México comparten: ¿ser informal hoy te condena a ser informal mañana?</p>
+<p>Seis sesiones en vivo, teoría y preparación en video, asesoría personal para tu propio proyecto. R no es requisito. Hace falta el criterio econométrico básico.</p>
+<p><a href="https://lafarola.thinkific.com/courses/panel" class="btn-farola">Ver el programa completo</a></p>
+<p>Early bird hasta el sábado 15 de agosto. Si tienes dudas, escríbeme al <a href="https://wa.me/51971333867?text=Hola%20Gonzalo,%20quiero%20info%20sobre%20el%20taller%20de%20Panel">WhatsApp</a>: las respondo yo.</p>
 <hr>
 <p>Ah, y al profesor de Cusco: sí, este año lo enseñamos.</p>
 <p><em>La mayoría usa la estadística como un borracho usa una farola: más para apoyarse que para iluminarse. Nosotros preferimos iluminar.</em></p>
+<hr>
+<p><strong>Actualización, 15 de septiembre de 2026.</strong> El taller de paneles se dictó entre el 19 de agosto y el 9 de septiembre: seis sesiones con catorce personas. Se está convirtiendo en separata (lecturas, código, datos y un video de repaso por lección) y se anunciará aquí cuando esté lista. El paquete de R y las lecciones gratis en video siguen en desarrollo, y el boletín no sostuvo la cadencia semanal durante el dictado a pesar de sí haberse actualizado. Lo que sí salió: seis resultados del taller en <a href="../../posts/2026-09-04-lo-que-encontramos/index.html">este post</a>, y una sesión gratuita en vivo con la ENUT 2024 el sábado 19 de septiembre, con <a href="https://lafarola.thinkific.com/products/live_events/enut-2024">inscripción aquí</a>.</p>
 
 
 </section>
